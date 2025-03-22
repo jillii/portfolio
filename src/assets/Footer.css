@@ -1,0 +1,48 @@
+footer {
+    margin-top: auto;
+    padding: 66px 0 21px;
+}
+
+footer .site-container {
+    display: flex;
+    justify-content: space-between;
+}
+a[href*=stackoverflow]:before {
+    content: url(../assets/images/stack-overflow-brands.svg)
+}
+a[href*=github]:before {
+    content: url(../assets/images/github-brands.svg)
+}
+a[href*=medium]:before {
+    content: url(../assets/images/medium-brands.svg)
+}
+.socials {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.social {
+    transition: filter .25s;
+}
+
+.social:hover:before {
+    animation: dropshadow .25s forwards ease;
+}
+
+@media (max-width: 480px) {
+    footer .site-container {
+        flex-direction: column;
+    }
+    .socials {
+        order: -1
+    }
+}
+
+@keyframes dropshadow {
+    from {
+        filter: none;
+    }
+    to {
+        filter: invert(1) drop-shadow(0 0 4px #111);
+    }
+}

@@ -1,16 +1,16 @@
 export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui."
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui."
+    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui.",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui."
 }
 export const CONTACT = {
     email: 'jho3292@gmail.com',
-    socials: {
-        GitHub: 'https://github.com/jillii',
-        Medium: 'https://medium.com/@jillii',
-        Stackoverflow: 'https://stackoverflow.com/users/5161457/jillian-hoenig',
-    }
+    socials: [
+        'https://medium.com/@jillii',
+        'https://github.com/jillii',
+        'https://stackoverflow.com/users/5161457/jillian-hoenig',
+    ]
 }
 export const WORK = [
     {

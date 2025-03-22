@@ -1,6 +1,9 @@
 #root {
+  min-height: calc(100dvh - 91px);
   width: 100%;
   margin-top: 91px;
+  display: flex;
+  flex-direction: column;
 }
 .site-container {
   width: min(1280px, 90%);
