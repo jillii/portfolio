@@ -1,5 +1,6 @@
 import { CONTACT } from '../data'
 import '../assets/Footer.css'
+import Social from './Social'
 
 export default function Footer () {
     return (
@@ -10,7 +11,7 @@ export default function Footer () {
                     <p>©2025 Jill</p>
                     {CONTACT.socials &&
                         <div className='socials'>
-                            {CONTACT.socials.map((social) => <a href={social} target='_blank' className='social'></a>)}
+                            {CONTACT.socials.map((social, index) => <Social key={index} url={social} />)}
                         </div>
                     }
                     <p>Made with love</p>

@@ -27,7 +27,7 @@ nav ul li:has(a[href='/']) {
 
 nav ul li a[href='/']:before {
     content: '';
-    background-image: url(../assets/images/bubble-jill--2.png);
+    background-image: url(bubble-jill--2.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
@@ -36,5 +36,5 @@ nav ul li a[href='/']:before {
 }
 
 nav ul li:hover a[href='/']:before {
-    background-image: url(../assets/images/bubble-jill--1.png);
+    background-image: url(bubble-jill--1.png);
 }
