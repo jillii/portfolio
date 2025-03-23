@@ -4,7 +4,14 @@ export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
     summary: "Web development is an art, and the internet is a canvas.",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui."
+    bio: [
+        "I'm Jill—web engineer for 9+ years.",
+        "The first language I learned to program with was Java. The second was C.",
+        "While my professional work focuses heavily towards frontend, my background in object-oriented / low-level programming and continuous stream of backend-heavy side projects allows my to bridge the two worlds.",
+        "I have built award-winning websites for large agencies, and helped small companies grow with a polished, high-performing websites.",
+        "I lived through the dawn of the internet, and it captures my imagination to this day",
+        "Web development is an art, and it's my favorite kind."
+    ]
 }
 export const CONTACT = {
     email: 'jho3292@gmail.com',

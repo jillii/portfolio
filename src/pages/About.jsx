@@ -1,14 +1,19 @@
+import {ABOUT} from '../data'
+import '../assets/About.css'
+
 function About() {
   return (
     <>
-      <div className="site-container">
-        <h1>About Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet, arcu non tempus vehicula, turpis ante aliquet eros, id pellentesque libero arcu vel felis. Quisque vehicula, nisi at sagittis vulputate, lectus dui fermentum orci, quis vestibulum eros ante eget risus. Fusce non convallis dui. Nulla et interdum arcu. Etiam at lorem mi. Suspendisse potenti. Sed est lectus, pellentesque vel turpis vitae, tincidunt eleifend leo.</p>
-        <p>Morbi eu leo est. Cras eleifend ligula ante, varius commodo arcu commodo vel. Nam felis enim, egestas at consectetur eget, bibendum sed leo. Vestibulum et risus sed tortor sollicitudin lobortis a non justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Vivamus quis metus vel elit blandit hendrerit. Mauris pharetra erat eget erat condimentum hendrerit. Maecenas sit amet tristique leo. Integer vulputate vehicula elit eu rhoncus. Pellentesque eget neque in tortor tempus vulputate a sed ipsum.</p>
-        <p>Duis id facilisis felis. Duis mattis lectus in nisi pretium fringilla. Integer velit sem, suscipit vitae lectus vel, cursus porta diam. In feugiat sit amet risus tincidunt malesuada. Vivamus tincidunt tempor ornare. Quisque efficitur viverra urna at aliquet. Mauris sit amet massa vel mauris suscipit sollicitudin. Cras porta cursus tincidunt. Morbi eu turpis vel nulla vestibulum cursus tristique eu risus. Sed magna arcu, porta vitae blandit a, bibendum id nunc. Phasellus tempus velit mattis magna varius pretium. Sed interdum non risus at dictum. Sed nulla dui, faucibus nec mattis at, faucibus vitae leo. In condimentum, odio et euismod semper, nisi metus molestie libero, eget porta ipsum tellus quis orci.</p>
-        <p>Duis accumsan elementum erat et mattis. Ut imperdiet lacus nulla, a consectetur velit pulvinar et. Vestibulum volutpat ipsum enim, non ultrices metus posuere sed. Cras at volutpat massa, at pulvinar dui. Aliquam finibus augue ac nunc dictum, eu mattis est pretium. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sit amet eros justo. Nam lorem ante, tincidunt non nulla id, dapibus iaculis nisi.</p>
-        <p>Integer ac augue vel arcu scelerisque dapibus ac quis neque. Nulla cursus suscipit eros. Etiam consequat porta purus non mattis. Nam iaculis in metus sed interdum. Aliquam at mollis libero. Pellentesque vitae urna malesuada, tempus lectus a, vestibulum lectus. Ut pharetra viverra leo, sed bibendum erat volutpat id. Praesent lorem diam, gravida eget ante ac, finibus eleifend erat. In commodo elementum semper. Aenean consectetur, nisl sodales interdum iaculis, lorem tellus aliquet arcu, eu rhoncus magna ante ac magna. Suspendisse eget iaculis risus. Integer semper turpis at metus maximus, vel tempus libero placerat. Cras posuere eleifend erat, eu accumsan velit euismod eu.</p>
-      </div>
+      <section>
+        <div className="site-container">
+          <div className='flexbox about'>
+            <div class="copy-area">{ABOUT.bio.map((paragraph, index) => {
+              {return index === 0 ? <h1 className='headline'>{paragraph}</h1> : <p>{paragraph}</p>}
+            })}</div>
+            <div className='bubble'></div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
