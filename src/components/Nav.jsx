@@ -10,15 +10,15 @@ export default function () {
             <nav>
             <div className='site-container'>
                 <ul>
-                <li><Link to="/portfolio/"></Link></li>
-                <li><Link to="/portfolio/about/">About</Link></li>
+                <li><Link to="/"></Link></li>
+                <li><Link to="/about/">About</Link></li>
                 <li><Anchor to="#contact">Contact</Anchor></li>
                 </ul>
             </div>
             </nav>
             <Routes>
-                <Route path="/portfolio/" element={<Home />}></Route>
-                <Route path="/portfolio/about/" element={<About />}></Route>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/about/" element={<About />}></Route>
             </Routes>
         </BrowserRouter>
     )

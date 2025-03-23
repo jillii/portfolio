@@ -35,7 +35,7 @@ export const WORK = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
         link: 'https://beamable.com/',
-        image: image_path + 'beamable-animation.gif',
+        image: image_path + 'beamable.mp4',
         overlay: 'white'
     },
     {
@@ -43,7 +43,7 @@ export const WORK = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
         link: 'https://theroboticsplaybook.com/',
-        image: image_path + 'cybernetixplaybook.gif',
+        image: image_path + 'cybernetixplaybook.mp4',
         overlay: 'white'
     },
     {
@@ -58,7 +58,7 @@ export const WORK = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['JavaScript'],
         link: 'https://www.allstacks.com/roi-calculator',
-        image: image_path + 'allstacks-roi-calc.gif'
+        image: image_path + 'allstacks.mp4'
     },
     {
         title: "Travel Tech Titans",
@@ -72,7 +72,7 @@ export const WORK = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['WordPress', 'PHP', 'Git'],
         link: 'http://designstatements-llc.com/',
-        image: image_path + 'designstatements-homepage.gif',
+        image: image_path + 'designstatements.mp4',
         overlay: 'white'
     },
     {
@@ -80,7 +80,7 @@ export const WORK = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['Git', 'CSS', 'JavaScript'],
         link: 'https://companyon.vc/',
-        image: image_path + 'hyperloop.gif'
+        image: image_path + 'hyperloop.mp4'
     }
 ]
 export const PROJECTS = [
@@ -96,21 +96,21 @@ export const PROJECTS = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'React', 'Git'],
         link: 'https://jillii.github.io/guess-the-phrase/',
-        image: image_path + 'guessthephrase-app.gif'
+        image: image_path + 'guessthephrase.mp4'
     },
     {
         title: '!@#$% Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'Git'],
         link: 'https://expletive.plumbing/',
-        image: image_path + 'expletiveplumbing-music.gif'
+        image: image_path + 'expletiveplumbing.mp4'
     },
     {
         title: 'Cake Factory Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'Git'],
         link: 'https://cakefactory.party/',
-        image: image_path + 'cakefactory.gif',
+        image: image_path + 'cakefactory.mp4',
         overlay: 'white'
     }
 ]
