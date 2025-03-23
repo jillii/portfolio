@@ -18,7 +18,7 @@ export default function Social (props) {
     }
     return (
         <a href={url} target="_blank">
-            <img src={image} alt={alt} />
+            <img src={`assets/${image}`} alt={alt} />
         </a>
     )
 }
