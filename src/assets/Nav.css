@@ -2,6 +2,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
 }
 nav ul {
     display: flex;
@@ -13,6 +15,10 @@ nav ul {
 }
 nav ul li a {
     color: initial;
+}
+
+nav a:focus {
+    outline: none;
 }
 
 nav ul li:has(a[href='/']) {

@@ -1,0 +1,14 @@
+.bio {
+    max-width: 800px;
+    margin-bottom: 138px;
+}
+.section-head {
+    position: sticky;
+    width: auto;
+    top: 102px;
+    padding: 18px 28px;
+    border-radius: 13px;
+    background-color: #ffffff99;
+    backdrop-filter: blur(40px);
+    z-index: 998;
+}

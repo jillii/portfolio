@@ -1,11 +1,23 @@
 #root {
-  min-height: calc(100dvh - 91px);
+  min-height: calc(80dvh);
   width: 100%;
-  margin-top: 91px;
+  margin-top: 20dvh;
   display: flex;
   flex-direction: column;
 }
 .site-container {
-  width: min(1280px, 90%);
+  max-width: min(1980px, 90%);
   margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+
+section {
+  position: relative;
+  margin: 91px 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 200
 }

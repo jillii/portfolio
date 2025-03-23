@@ -1,0 +1,25 @@
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card:before {
+    content: attr(data-title);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card:hover:before {
+    opacity: 1;
+}

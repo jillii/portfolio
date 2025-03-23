@@ -1,7 +1,9 @@
+const image_path = './src/assets/images/';
+
 export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui.",
+    summary: "Web development is an art, and the internet is a canvas.",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui."
 }
 export const CONTACT = {
@@ -14,72 +16,93 @@ export const CONTACT = {
 }
 export const WORK = [
     {
+        title: "Quorum Federal Credit Union",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
+        link: 'https://www.quorumfcu.org/',
+        image: image_path + 'quorum-homepage.png'
+    },
+    {
         title: "Beamble",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
-        link: 'https://beamable.com/'
+        link: 'https://beamable.com/',
+        image: image_path + 'beamable-animation.gif',
+        overlay: 'white'
     },
     {
         title: "Cybernetix Playbook",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
-        link: 'https://theroboticsplaybook.com/'
+        link: 'https://theroboticsplaybook.com/',
+        image: image_path + 'cybernetixplaybook.gif',
+        overlay: 'white'
     },
     {
-        title: "Quorum Federal Credit Union",
+        title: "Companyon",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
-        link: 'https://www.quorumfcu.org/'
+        tech: ['WorrdPress', 'Git', 'PHP', 'JavaScript'],
+        link: 'https://companyon.vc/',
+        image: image_path + 'companyon.png'
     },
     {
-        title: "Ideometry",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
-        link: 'https://ideometry.com/'
-    },
-    {
-        title: "Foxy AI",
+        title: "Allstacks ROI Calculator",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['JavaScript'],
-        link: 'https://foxyai.com/'
+        link: 'https://www.allstacks.com/roi-calculator',
+        image: image_path + 'allstacks-roi-calc.gif'
     },
     {
-        title: "Allstacks",
+        title: "Travel Tech Titans",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['JavaScript'],
-        link: 'https://www.allstacks.com/roi-calculator'
+        tech: ['PHP', 'SCSS', 'JavaScript', 'Git'],
+        image: image_path + 'traveltechtitans.png',
+        overlay: 'white'
     },
-
+    {
+        title: 'Design Statements LLC Official',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
+        tech: ['WordPress', 'PHP', 'Git'],
+        link: 'http://designstatements-llc.com/',
+        image: image_path + 'designstatements-homepage.gif',
+        overlay: 'white'
+    },
+    {
+        title: "Hyperloop",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        tech: ['Git', 'CSS', 'JavaScript'],
+        link: 'https://companyon.vc/',
+        image: image_path + 'hyperloop.gif'
+    }
 ]
 export const PROJECTS = [
     {
         title: 'Playlists With Friends (WIP)',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
-        link: 'https://playlistswithfriends.app/'
+        link: 'https://playlistswithfriends.app/',
+        image: image_path + 'playlistswithfriends-homepage.png'
     },
     {
         title: 'Guess The Phrase',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'React', 'Git'],
-        link: 'https://jillii.github.io/guess-the-phrase/'
+        link: 'https://jillii.github.io/guess-the-phrase/',
+        image: image_path + 'guessthephrase-app.gif'
     },
     {
         title: '!@#$% Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'Git'],
-        link: 'https://expletive.plumbing/'
+        link: 'https://expletive.plumbing/',
+        image: image_path + 'expletiveplumbing-music.gif'
     },
     {
         title: 'Cake Factory Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'Git'],
-        link: 'https://cakefactory.party/'
-    },
-    {
-        title: 'Design Statements LLC Official',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['WordPress', 'PHP', 'Git'],
-        link: 'http://designstatements-llc.com/'
-    },
+        link: 'https://cakefactory.party/',
+        image: image_path + 'cakefactory.gif',
+        overlay: 'white'
+    }
 ]

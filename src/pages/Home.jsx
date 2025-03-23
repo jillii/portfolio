@@ -1,8 +1,36 @@
+import {ABOUT, WORK, PROJECTS} from '../data'
+import Card from '../components/Card'
+import '../assets/Home.css'
+
 function Home() {
-return (
-    <div className="site-container">
-    <h1>Home Page</h1>
-    </div>
-)
+    return (
+        <>
+            <section>
+                <div className="site-container">
+                    <h1 className="bio">{ABOUT.summary}</h1>
+                </div>
+            </section>
+            {WORK &&
+                <>
+                    <section>
+                        <div className='site-container section-head'>
+                            <h2>Websites I've built for companies</h2>
+                        </div>
+                        <div className="card-container">
+                            {WORK.map((item, index) => <Card key={index} title={item.title} image={item.image} overlay={item.overlay} />)}
+                        </div>
+                    </section>
+                    <section>
+                        <div className='site-container section-head'>
+                            <h2>Websites I've built for myself</h2>
+                        </div>
+                        <div className="card-container">
+                            {PROJECTS.map((item, index) => <Card key={index} title={item.title} image={item.image} overlay={item.overlay} />)}
+                        </div>
+                    </section>
+                </>
+            }
+        </>
+    )
 }
 export default Home;
