@@ -24,7 +24,7 @@
 
 .bubble:before {
     content: '';
-    background-image: url(bubble-jill--1.png);
+    background-image: url(/assets/bubble-jill--1.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 31px;
