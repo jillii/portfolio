@@ -1,10 +1,15 @@
 footer {
-    margin-top: auto;
+    margin-top: 120px;
     padding: 166px 0 21px;
+    background-color: #f4f4f4;
 }
 
-footer .site-container {
-    display: flex;
+.footer-cta {
+    margin-bottom: 191px;
+}
+
+footer .flexbox {
+    width: 100%;
     justify-content: space-between;
 }
 a[href*=stackoverflow]:before {
@@ -15,6 +20,9 @@ a[href*=github]:before {
 }
 a[href*=medium]:before {
     content: url(../assets/images/medium-brands.svg)
+}
+a[href*=linkedin]:before {
+    content: url(../assets/images/linkedin-in-brands.svg);
 }
 .socials {
     display: flex;

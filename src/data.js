@@ -3,7 +3,7 @@ const image_path = './src/assets/images/';
 export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
-    summary: "Web development is an art, and the internet is a canvas.",
+    summary: "Web development is an art.",
     bio: [
         "I'm Jill—web engineer for 9+ years.",
         "The first language I learned to program with was Java. The second was C.",
@@ -19,6 +19,7 @@ export const CONTACT = {
         'https://medium.com/@jillii',
         'https://github.com/jillii',
         'https://stackoverflow.com/users/5161457/jillian-hoenig',
+        'https://www.linkedin.com/in/jillianhoenig/'
     ]
 }
 export const WORK = [
