@@ -1,20 +1,19 @@
 import { Link } from 'react-router-dom'
 import '../assets/Cards.css'
-import Site from '../pages/Site'
+import Project from '../pages/Project'
 
 export default function Card (props) {
     const title = props.title
     const image = props.image
-    const overlay = props.overlay === 'white'
-    const slug = props.slug
     const tech = props.tech
     const body = props.body
+    const overlay = props.overlay === 'white'
+    const slug = props.slug
     const isVideo = image.includes('mp4')
 
     return (
         <Link to={`/project/${slug}/`} 
-              path={slug} 
-              element={<Site />} 
+              element={<Project title={title} tech={tech} body={body} />} 
               className="card" 
               data-title={title} 
               style={overlay ? {color: '#fff'} : {}}>

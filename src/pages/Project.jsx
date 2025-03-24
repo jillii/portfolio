@@ -1,16 +1,10 @@
-import { useParams } from 'react-router'
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-
-export default function Site () {
-
-    const params = useParams();
-    const title = params.title
-    const tech = params.tech
-    const body = params.body
-
-
-    console.log(title)
+import ReactMarkdown from "react-markdown"
+import rehypeRaw from "rehype-raw"
+ 
+export default function Project (props) {
+    const title = props.title
+    const tech = props.tech
+    const body = props.body
 
     return (
         <section>
