@@ -89,7 +89,7 @@ export const PROJECTS = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
         link: 'https://playlistswithfriends.app/',
-        image: image_path + 'playlistswithfriends-homepage.png'
+        image: image_path + 'playlistswithfriends.mp4'
     },
     {
         title: 'Guess The Phrase',
