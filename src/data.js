@@ -27,20 +27,34 @@ export const WORK = [
         slug: "quorum",
         title: "Quorum Federal Credit Union",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'WordPress'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         link: 'https://www.quorumfcu.org/',
         image: image_path + 'quorum-homepage.png',
-        body: `<p>This site was a complete overhaul.</p><img src="${image_path}projects/quorum-rates-table.png" alt="quorum rates table" />`
+        body: `<p>QFCU wanted to adopt a younger, more modern tone. The project was essential a complete overhaul. I took the opportunity to improve the site's backend architecture.</p>
+        <img src="${image_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
+        <p>My focus was to streamline user experience - turn repetitive, manual data-entry into streamlined automations. Previously, populating the rates page meant uploading an XML file with all the rates to the backend. The page would then render the new rates. This system was clunky and unecessarily complex - a new XML would need to be made to update even a single rate. So, I created a data type for rates, which could be updated in the dashboard.</p>
+        <img src="${image_path}projects/quorum-rate-backend.png" alt="rate backend"/>
+        <p>Website updates should be quick and painless. Technology should help, not hurt.</p>
+        <p>With help from my friends from design, I elevated the rates page user-experience with clear, well-styled rates tables.</p>
+        <img src="${image_path}projects/quorum-rate-table.png" alt="quorum rates table" />
+        <p>And yes, they are easy to edit!</p>`
     },
     {
         slug: 'beamable',
         title: "Beamble",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'WordPress'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'CSS Keyframe Animations'],
         link: 'https://beamable.com/',
         image: image_path + 'beamable.mp4',
         overlay: 'white',
-        body: "This is some body copy."
+        body: `<p>This was one of my favorite projects. The product was fun and future-forward, so the website had to reflect that.</p>
+        <video src="${image_path}projects/beamable-homepage-hero-animation.mp4" alt="beamable homepage hero animation" autoplay loop muted></video>
+        <p>With a little imagination, and a lot of CSS (684 lines of keyframe animation SCSS to be exact), I turned a beautiful design into an animated dream.</p>
+        <p>Everything was treated with a tasteful amount of whimsy.</p>
+        <video src="${image_path}projects/beamable-blog.mp4" alt="beamable blog hero" autoplay loop muted></video>
+        <p>All the animations were subtle. I implemented slight delay offsets for intrigue.</p> 
+        <video src="${image_path}projects/beamable-customers-hero.mp4" alt="beamable customers hero" autoplay loop muted></video>
+        <p>This project was a testiment to what a little love and imagination can do for a site. Web development is more than just a job for me. It's an opportunity to create something incredible.</p>`
     },
     {
         slug: "cybernetix-playbook",
