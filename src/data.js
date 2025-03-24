@@ -24,29 +24,36 @@ export const CONTACT = {
 }
 export const WORK = [
     {
+        slug: "quorum",
         title: "Quorum Federal Credit Union",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
         link: 'https://www.quorumfcu.org/',
-        image: image_path + 'quorum-homepage.png'
+        image: image_path + 'quorum-homepage.png',
+        body: `<p>This is some body copy.</p>`
     },
     {
+        slug: 'beamable',
         title: "Beamble",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
         link: 'https://beamable.com/',
         image: image_path + 'beamable.mp4',
-        overlay: 'white'
+        overlay: 'white',
+        body: "This is some body copy."
     },
     {
+        slug: "cybernetix-playbook",
         title: "Cybernetix Playbook",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
         link: 'https://theroboticsplaybook.com/',
         image: image_path + 'cybernetixplaybook.mp4',
-        overlay: 'white'
+        overlay: 'white',
+        body: "This is some body copy"
     },
     {
+        slug: "companyon",
         title: "Companyon",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['WorrdPress', 'Git', 'PHP', 'JavaScript'],
@@ -54,6 +61,7 @@ export const WORK = [
         image: image_path + 'companyon.png'
     },
     {
+        slug: "allstacks-roi-calculator",
         title: "Allstacks ROI Calculator",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['JavaScript'],
@@ -61,6 +69,7 @@ export const WORK = [
         image: image_path + 'allstacks.mp4'
     },
     {
+        slug: "travel-tech-titans",
         title: "Travel Tech Titans",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'Git'],
@@ -68,6 +77,7 @@ export const WORK = [
         overlay: 'white'
     },
     {
+        slug: "design-statements",
         title: 'Design Statements LLC Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['WordPress', 'PHP', 'Git'],
@@ -76,6 +86,7 @@ export const WORK = [
         overlay: 'white'
     },
     {
+        slug: "hyperloop",
         title: "Hyperloop",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['Git', 'CSS', 'JavaScript'],
@@ -85,20 +96,7 @@ export const WORK = [
 ]
 export const PROJECTS = [
     {
-        title: 'Playlists With Friends (WIP)',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
-        link: 'https://playlistswithfriends.app/',
-        image: image_path + 'playlistswithfriends.mp4'
-    },
-    {
-        title: 'Guess The Phrase',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['JavaScript', 'React', 'Git'],
-        link: 'https://jillii.github.io/guess-the-phrase/',
-        image: image_path + 'guessthephrase.mp4'
-    },
-    {
+        slug: "expletive",
         title: '!@#$% Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'Git'],
@@ -106,6 +104,23 @@ export const PROJECTS = [
         image: image_path + 'expletiveplumbing.mp4'
     },
     {
+        slug: "playlists-with-friends",
+        title: 'Playlists With Friends (WIP)',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
+        tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
+        link: 'https://playlistswithfriends.app/',
+        image: image_path + 'playlistswithfriends.mp4'
+    },
+    {
+        slug: "guess-the-phrase",
+        title: 'Guess The Phrase',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
+        tech: ['JavaScript', 'React', 'Git'],
+        link: 'https://jillii.github.io/guess-the-phrase/',
+        image: image_path + 'guessthephrase.mp4'
+    },
+    {
+        slug: "cake-factory",
         title: 'Cake Factory Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'Git'],
