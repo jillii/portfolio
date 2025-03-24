@@ -1,4 +1,4 @@
-const image_path = 'assets/';
+const image_path = '/assets/';
 
 export const ABOUT = {
     name: "Jill Hoenig",
@@ -22,36 +22,40 @@ export const CONTACT = {
         'https://www.linkedin.com/in/jillianhoenig/'
     ]
 }
-export const WORK = [
+export const WORK = {
+    quourm:
     {
         slug: "quorum",
         title: "Quorum Federal Credit Union",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'WordPress'],
         link: 'https://www.quorumfcu.org/',
         image: image_path + 'quorum-homepage.png',
-        body: `<p>This is some body copy.</p>`
+        body: `<p>This site was a complete overhaul.</p><img src="${image_path}projects/quorum-rates-table.png" alt="quorum rates table" />`
     },
+    beamable:
     {
         slug: 'beamable',
         title: "Beamble",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'WordPress'],
         link: 'https://beamable.com/',
         image: image_path + 'beamable.mp4',
         overlay: 'white',
         body: "This is some body copy."
     },
+    cybernetix:
     {
         slug: "cybernetix-playbook",
         title: "Cybernetix Playbook",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'CSS Framework Animations'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'test'],
         link: 'https://theroboticsplaybook.com/',
         image: image_path + 'cybernetixplaybook.mp4',
         overlay: 'white',
         body: "This is some body copy"
     },
+    companyon:
     {
         slug: "companyon",
         title: "Companyon",
@@ -60,6 +64,7 @@ export const WORK = [
         link: 'https://companyon.vc/',
         image: image_path + 'companyon.png'
     },
+    allstacks:
     {
         slug: "allstacks-roi-calculator",
         title: "Allstacks ROI Calculator",
@@ -68,6 +73,7 @@ export const WORK = [
         link: 'https://www.allstacks.com/roi-calculator',
         image: image_path + 'allstacks.mp4'
     },
+    traveltechtitans:
     {
         slug: "travel-tech-titans",
         title: "Travel Tech Titans",
@@ -76,6 +82,7 @@ export const WORK = [
         image: image_path + 'traveltechtitans.png',
         overlay: 'white'
     },
+    designstatements:
     {
         slug: "design-statements",
         title: 'Design Statements LLC Official',
@@ -85,6 +92,7 @@ export const WORK = [
         image: image_path + 'designstatements.mp4',
         overlay: 'white'
     },
+    hyperloop:
     {
         slug: "hyperloop",
         title: "Hyperloop",
@@ -93,8 +101,9 @@ export const WORK = [
         link: 'https://companyon.vc/',
         image: image_path + 'hyperloop.mp4'
     }
-]
-export const PROJECTS = [
+}
+export const PROJECTS = {
+    expletive:
     {
         slug: "expletive",
         title: '!@#$% Official',
@@ -103,6 +112,7 @@ export const PROJECTS = [
         link: 'https://expletive.plumbing/',
         image: image_path + 'expletiveplumbing.mp4'
     },
+    playlistswithfriends:
     {
         slug: "playlists-with-friends",
         title: 'Playlists With Friends (WIP)',
@@ -111,6 +121,7 @@ export const PROJECTS = [
         link: 'https://playlistswithfriends.app/',
         image: image_path + 'playlistswithfriends.mp4'
     },
+    guessthephrase:
     {
         slug: "guess-the-phrase",
         title: 'Guess The Phrase',
@@ -119,6 +130,7 @@ export const PROJECTS = [
         link: 'https://jillii.github.io/guess-the-phrase/',
         image: image_path + 'guessthephrase.mp4'
     },
+    cakefactory:
     {
         slug: "cake-factory",
         title: 'Cake Factory Official',
@@ -128,4 +140,4 @@ export const PROJECTS = [
         image: image_path + 'cakefactory.mp4',
         overlay: 'white'
     }
-]
+}

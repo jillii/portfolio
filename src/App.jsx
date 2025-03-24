@@ -5,7 +5,7 @@ import { HashLink as Anchor } from 'react-router-hash-link'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import {WORK, PROJECTS} from './data'
+import { WORK, PROJECTS } from './data'
 import Site from './pages/Site'
 
 function App() {
@@ -25,8 +25,16 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about/" element={<About />}></Route>
-          {WORK.map((item, index) => <Route key={index} path={`project/${item.slug}/`} element={<Site body={item.body} />}></Route>)}
-          {PROJECTS.map((item, index) => <Route key={index} path={`project/${item.slug}/`} element={<Site body={item.body} />}></Route>)}
+          {Object.entries(WORK).map((project) => {
+            project.map((item, index) => {
+              <Route key={index} path={`project/${item.slug}/`} element={<Site body={item.body} />}></Route>
+            })
+          })}
+          {Object.entries(PROJECTS).map((project) => {
+            project.map((item, index) => {
+              <Route key={index} path={`project/${item.slug}/`} element={<Site body={item.body} />}></Route>
+            })
+          })}
         </Routes>
       </BrowserRouter>
       <Footer />
