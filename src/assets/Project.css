@@ -1,0 +1,31 @@
+.project-title {
+    margin-top: 0;
+}
+
+.tech {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.tech-pill {
+    border: 1px solid #111;
+    padding: 3px 24px;
+    border-radius: 24px;
+    letter-spacing: 1.4px;
+}
+.project-body {
+    margin-top: 91px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.project-body p {
+    max-width: 1000px;
+}
+
+.project-body :is(img, video) {
+    max-width: 1600px;
+    width: 100%;
+    margin: 2em 0;
+}
