@@ -60,11 +60,17 @@ export const WORK = [
         slug: "cybernetix-playbook",
         title: "Cybernetix Playbook",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git', 'test'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         link: 'https://theroboticsplaybook.com/',
         image: image_path + 'cybernetixplaybook.mp4',
         overlay: 'white',
-        body: "This is some body copy"
+        body: `<p>I had a lot of fun building this website. The client wanted it to look and behave like a book. Far from your standard site.</p>
+        <video src="${image_path}projects/cybernetix-welcome.mp4" autoplay loop muted></video>
+        <p>The idea had been proposed to a different dev team, and they estimated it would take about 230-280 hours. I built it in an eighth of the time. Sometimes all you need is a strong foundation to give you the flexibility to tackle curveballs.</p>
+        <video src="${image_path}projects/cybernetix-product-development.mp4" autoplay loop muted></video>
+        <p>There's no WordPress plugin or JavaScript library to satisfy this ask. The behavior is simple JavaScript, and the appearance is just CSS.</p>
+        <video src="${image_path}projects/cybernetix-verticle.mp4" autoplay loop muted></video>
+        <p>Websites can look and behave however you want. Anything is possible - all you need is a vision, and a developer who will delight in a "non-standard" request.</p>`
     },
     {
         slug: "companyon",

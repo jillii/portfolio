@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import { WORK, PROJECTS } from './data'
 import Project from './pages/Project'
+import ScrollToTop from './components/ScrollToTop.js'
 
 function App() {
 
@@ -26,10 +27,10 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about/" element={<About />}></Route>
           {WORK.map((item, index) => {
-              return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
+            return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
           })}
           {PROJECTS.map((item, index) => {
-              return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
+            return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
           })}
         </Routes>
       </BrowserRouter>
