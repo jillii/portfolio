@@ -76,9 +76,21 @@ export const WORK = [
         slug: "companyon",
         title: "Companyon",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['WorrdPress', 'Git', 'PHP', 'JavaScript'],
+        tech: ['Leadership', 'PHP', 'JavaScript', 'SCSS', 'WordPress', 'Code Review'],
         link: 'https://companyon.vc/',
-        image: image_path + 'companyon.png'
+        image: image_path + 'companyon.png',
+        body: `<p>This was the first website I built as a Tech Lead.</p>
+        <video src="${image_path}projects/companyon-homepage-hero.mp4" autoplay loop muted></video>
+        <p>The team was small - just me and a junior developer. But it was all the same to me, and I wanted to be the best lead possible. This was the perfect project to train with, because it was small - yet the unique design posed a few little coding challenges.</p>
+        <video src="${image_path}projects/companyon-color-change-svgs.mp4" autoplay loop muted></video>
+        <p>This design required us to really dig into SVG code. Those little images carry an entire ecosystem (of code) inside of them - and we were bending the laws of nature. It was a learning opportunity for everyone, including me.</p>
+        <video src="${image_path}projects/companyon-pixel-buttons.mp4" autoplay loop muted></video>
+        <p>I've had some pretty awful mentors. People who were not available, who didn't care. My goal was to be the opposite of that.</p>
+        <img loading="lazy" src="${image_path}projects/companyon-blog-hero.png" alt="companyon blog post hero"/>
+        <p>I wanted to inspire - to share my excitement for code. I qualified all my instructions and advice with "but there could be a better way..." to open the door to experimentation.</p>
+        <img loading="lazy" src="${image_path}projects/companyon-recent-posts.png" alt="companyon recent posts"/>
+        <p>I set the standard high from the start. I held the whole team to the same standard that I held myself.</p>
+        <p> The client loved the final product, and we were officially a team.</p>`
     },
     {
         slug: "allstacks-roi-calculator",
