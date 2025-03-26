@@ -170,14 +170,24 @@ export const PROJECTS = [
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation'],
         link: 'https://expletive.plumbing/',
         image: image_path + 'expletiveplumbing.mp4',
-        body: `<p></p>
+        body: `<p>This is the official website of my IDM projects !@#$%.</p>
+        <video src="${image_path}projects/expletive-music.mp4" autoplay loop muted></video>
+        <p>The design is a reflection of my sound—sparse, alien, glittery, and cute.</p>
+        <p>This site runs the gamut on CSS keyframe animations. It's where I came up with a little trick I wrote about <a href="https://medium.com/@jillii/traveling-through-space-with-pure-css-1b113c58ec1b" target="_blank">here</a>.</p>
+        <video src="${image_path}projects/expletive-stars.mp4" autoplay loop muted></video>
+        <p>This site is built using a framework called Jekyll. I chose Jekyll for this site, because there's essentially no database—all data is stored in a YML file. That's why it's so fast :)</p>
+        <p>It utilizes JavaScript for filtering, as well as the media player, which I built from scratch.</p>
+        <video src="${image_path}projects/expletive-filter.mp4" autoplay loop muted></video>
+        <p>And it's filled with easter eggs.</p>
+        <p>Keep those eyes open!</p>
+        <video src="${image_path}projects/expletive-button.mp4" autoplay loop muted></video>
         `
     },
     {
         slug: "playlists-with-friends",
         title: 'Playlists With Friends (WIP)',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
+        tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku'],
         link: 'https://playlistswithfriends.app/',
         image: image_path + 'playlistswithfriends.mp4',
         body: `<p>Sometimes you need to create a web app simply because you want it to exist.</p>
