@@ -70,7 +70,7 @@ export const WORK = [
         <video src="${image_path}projects/cybernetix-product-development.mp4" autoplay loop muted></video>
         <p>There's no WordPress plugin or JavaScript library to satisfy this ask. The behavior is simple JavaScript, and the appearance is just CSS.</p>
         <video src="${image_path}projects/cybernetix-verticle.mp4" autoplay loop muted></video>
-        <p>Websites can look and behave however you want. Anything is possible—all you need is a vision, and a developer who will delight in a "non-standard" request.</p>`
+        <p>Websites can look and behave however you want. Anything is possible—all you need is a vision, and a developer who loves a "non-standard" request.</p>`
     },
     {
         slug: "companyon",
