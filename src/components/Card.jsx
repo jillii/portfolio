@@ -14,12 +14,14 @@ export default function Card (props) {
     return (
         <Link to={`/project/${slug}/`} 
               element={<Project title={title} tech={tech} body={body} />} 
-              className="card" 
-              data-title={title} 
-              style={overlay ? {color: '#fff'} : {}}>
+              className="card" >
             {image &&
                 isVideo ? <video src={image} autoPlay loop muted></video> : <img loading="lazy" src={image} alt={title} />
             }
+            <div className='card-data'>
+                <h3>{title}</h3>
+                <ul className='card-tech'>{tech.map((item, index) => <li className="tech-pill" key={index}>{item}</li>)}</ul>
+            </div>
         </Link>
     )
 }

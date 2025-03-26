@@ -46,7 +46,6 @@ export const WORK = [
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'CSS Keyframe Animations'],
         link: 'https://beamable.com/',
         image: image_path + 'beamable.mp4',
-        overlay: 'white',
         body: `<p>This was one of my favorite projects. The product was fun and future-forward, so the website had to reflect that.</p>
         <video src="${image_path}projects/beamable-homepage-hero-animation.mp4" alt="beamable homepage hero animation" autoplay loop muted></video>
         <p>With a little imagination, and a lot of CSS (684 lines of keyframe animation SCSS to be exact), I turned a beautiful design into an animated dream.</p>
@@ -63,7 +62,6 @@ export const WORK = [
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         link: 'https://theroboticsplaybook.com/',
         image: image_path + 'cybernetixplaybook.mp4',
-        overlay: 'white',
         body: `<p>I had a lot of fun building this website. The client wanted it to look and behave like a book. Far from your standard site.</p>
         <video src="${image_path}projects/cybernetix-welcome.mp4" autoplay loop muted></video>
         <p>The idea had been proposed to a different dev team, and they estimated it would take about 230-280 hours. I built it in an eighth of the time. Sometimes all you need is a strong foundation to give you the flexibility to tackle curveballs.</p>
@@ -115,7 +113,6 @@ export const WORK = [
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         image: image_path + 'traveltechtitans.png',
-        overlay: 'white',
         body: `<p>The design I recieved for this site was beautiful, intricate, and complex.</p>
         <img loading="lazy" src="${image_path}projects/ttt-hero.png" alt="travel tech titans hero"/>
         <p>The designer specifically asked for subtle movement of the translucent backsplash. Movement that was almost undiscernible, but distictly present in one's line of vision. The design was careful yet ambitious—and almost impossible to code.</p>
@@ -135,7 +132,6 @@ export const WORK = [
         tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UX/UI Design'],
         link: 'http://designstatements-llc.com/',
         image: image_path + 'designstatements.mp4',
-        overlay: 'white',
         body: `<p>The website of a design agency needs a great design. Nothing less than a pure reflection of its own work.</p>
         <img loading="lazy" src="${image_path}projects/design-statements-homepage.png" alt="design statements' homepage"/>
         <p>The Design Statements website design was inspired by paint chips commonly used by designers. The "chips" would open into sliders of images of homes re-imagined by Design Statements.</p>
@@ -224,7 +220,6 @@ export const PROJECTS = [
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'GitHub Pages', 'DO Ant Media Server'],
         link: 'https://cakefactory.party/',
         image: image_path + 'cakefactory.mp4',
-        overlay: 'white',
         body: `<p>Cake Factory is a rave-organizing collective dedicated to bringing the raw energy of basement shows to the rave scene.</p>
         <video src="${image_path}projects/cake-factory-nav.mp4" autoplay loop muted></video>
         <p>I wanted the design of the website to be understated and playful, like the collective.</p>
