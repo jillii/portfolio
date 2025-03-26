@@ -32,7 +32,7 @@ export const WORK = [
         image: image_path + 'quorum-homepage.png',
         body: `<p>QFCU wanted to adopt a younger, more modern tone. The project was essential a complete overhaul. I took the opportunity to improve the site's backend architecture.</p>
         <img loading="lazy" src="${image_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
-        <p>My focus was to streamline user experience - turn repetitive, manual data-entry into streamlined automations. Previously, populating the rates page meant uploading an XML file with all the rates to the backend. The page would then render the new rates. This system was clunky and unecessarily complex - a new XML would need to be made to update even a single rate. So, I created a data type for rates, which could be updated in the dashboard.</p>
+        <p>My focus was to streamline user experience—turn repetitive, manual data-entry into streamlined automations. Previously, populating the rates page meant uploading an XML file with all the rates to the backend. The page would then render the new rates. This system was clunky and unecessarily complex—a new XML would need to be made to update even a single rate. So, I created a data type for rates, which could be updated in the dashboard.</p>
         <img loading="lazy" src="${image_path}projects/quorum-rate-backend.png" alt="rate backend"/>
         <p>Website updates should be quick and painless. Technology should help, not hurt.</p>
         <p>With help from my friends from design, I elevated the rates page user-experience with clear, well-styled rates tables.</p>
@@ -70,7 +70,7 @@ export const WORK = [
         <video src="${image_path}projects/cybernetix-product-development.mp4" autoplay loop muted></video>
         <p>There's no WordPress plugin or JavaScript library to satisfy this ask. The behavior is simple JavaScript, and the appearance is just CSS.</p>
         <video src="${image_path}projects/cybernetix-verticle.mp4" autoplay loop muted></video>
-        <p>Websites can look and behave however you want. Anything is possible - all you need is a vision, and a developer who will delight in a "non-standard" request.</p>`
+        <p>Websites can look and behave however you want. Anything is possible—all you need is a vision, and a developer who will delight in a "non-standard" request.</p>`
     },
     {
         slug: "companyon",
@@ -81,13 +81,13 @@ export const WORK = [
         image: image_path + 'companyon.png',
         body: `<p>This was the first website I built as a Tech Lead.</p>
         <video src="${image_path}projects/companyon-homepage-hero.mp4" autoplay loop muted></video>
-        <p>The team was small - just me and a junior developer. But it was all the same to me, and I wanted to be the best lead possible. This was the perfect project to train with, because it was small - yet the unique design posed a few little coding challenges.</p>
+        <p>The team was small—just me and a junior developer. But it was all the same to me, and I wanted to be the best lead possible. This was the perfect project to train with, because it was small—yet the unique design posed a few little coding challenges.</p>
         <video src="${image_path}projects/companyon-color-change-svgs.mp4" autoplay loop muted></video>
-        <p>This design required us to really dig into SVG code. Those little images carry an entire ecosystem (of code) inside of them - and we were bending the laws of nature. It was a learning opportunity for everyone, including me.</p>
+        <p>This design required us to really dig into SVG code. Those little images carry an entire ecosystem (of code) inside of them—and we were bending the laws of nature. It was a learning opportunity for everyone, including me.</p>
         <video src="${image_path}projects/companyon-pixel-buttons.mp4" autoplay loop muted></video>
         <p>I've had some pretty awful mentors. People who were not available, who didn't care. My goal was to be the opposite of that.</p>
         <img loading="lazy" src="${image_path}projects/companyon-blog-hero.png" alt="companyon blog post hero"/>
-        <p>I wanted to inspire - to share my excitement for code. I qualified all my instructions and advice with "but there could be a better way..." to open the door to experimentation.</p>
+        <p>I wanted to inspire—to share my excitement for code. I qualified all my instructions and advice with "but there could be a better way..." to open the door to experimentation.</p>
         <img loading="lazy" src="${image_path}projects/companyon-recent-posts.png" alt="companyon recent posts"/>
         <p>I set the standard high from the start. I held the whole team to the same standard that I held myself.</p>
         <p> The client loved the final product, and we were officially a team.</p>`
@@ -101,7 +101,7 @@ export const WORK = [
         image: image_path + 'allstacks.mp4',
         body: `<p>Every once in a while, a client will ask for a calculator.</p>
         <video src="${image_path}projects/allstacks-roi-calc-savings.mp4" autoplay muted loop></video>
-        <p>I love building calculators - they're the perfect union of user-experience, logic, and math.</p>
+        <p>I love building calculators—they're the perfect union of user-experience, logic, and math.</p>
         <p>This calculator had a little secret though... The result could be NEGATIVE.</p>
         <p>But that was the truth. There were edge cases in which customers would not save money with Allstacks' product. So I brought it to my manager's attention, and we developed a UX for negative results.</p>
         <img loading="lazy" src="${image_path}projects/allstacks-roi-calc-negative-savings.png" alt="allstacks roi calculator showing negative savings" />
@@ -118,14 +118,14 @@ export const WORK = [
         overlay: 'white',
         body: `<p>The design I recieved for this site was beautiful, intricate, and complex.</p>
         <img loading="lazy" src="${image_path}projects/ttt-hero.png" alt="travel tech titans hero"/>
-        <p>The designer specifically asked for subtle movement of the translucent backsplash. Movement that was almost undiscernible, but distictly present in one's line of vision. The design was careful yet ambitious - and almost impossible to code.</p>
+        <p>The designer specifically asked for subtle movement of the translucent backsplash. Movement that was almost undiscernible, but distictly present in one's line of vision. The design was careful yet ambitious—and almost impossible to code.</p>
         <img loading="lazy" src="${image_path}projects/ttt-blurb.png" alt="travel tech titans blurb"/>
         <p>But nothing is truly impossible in web development. Over the year I've learned little tricks to satisfy designs, while keeping the code clean and readable.</p>
-        <p>One of my favorite tricks is this one for making HTML tables responsive. No, there are not two tables - just one with the ability to cleanly break down on mobile.</p>
+        <p>One of my favorite tricks is this one for making HTML tables responsive. No, there are not two tables—just one with the ability to cleanly break down on mobile.</p>
         <img loading="lazy" src="${image_path}projects/ttt-mid-stage.png" alt="travel tech titans mid stage table"/>
         <p>This trick utilizies HTML attributes hidden in the table cells. On mobile, the attributes' values are prepended to each table row using CSS.</p>
         <img loading="lazy" src="${image_path}projects/ttt-mid-stage-tablet.png" alt="travel tech titans mid stage table on tablet"/>
-        <p>Simple, clean, readable - an elegant code solution to match an elegant design.</p>
+        <p>Simple, clean, readable—an elegant code solution to match an elegant design.</p>
         `
     },
     {
@@ -143,7 +143,7 @@ export const WORK = [
         <video src="${image_path}projects/design-statements-chips.mp4" alt="design statements chips" autoplay muted loop></video>
         <p>It was eye-catching, yet tastful, like the interior designs it represented.</p>
         <video src="${image_path}designstatements.mp4" alt="design statements footer" autoplay muted loop></video>
-        <p>The client couldn't have been happier - this digital home for her work was truly representative of her elevated style.</p>
+        <p>The client couldn't have been happier—this digital home for her work was truly representative of her elevated style.</p>
         `
     },
     {
