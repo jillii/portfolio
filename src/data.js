@@ -213,7 +213,7 @@ export const PROJECTS = [
         <p>If you were a 90s child like I was, you probably remember watching <i>a lot</i> of Wheel Of Fortune with your parents. I designed this app to behave like the Wheel Of Fortune board—revealing one correctly guessed letter at a time. </p>
         <p>I developed a point system based on how many letters there are, and how quickly you're able to make a guess. JavaScript handles all the calculations.</p>
         <video src="${image_path}projects/guessthephrase-lose.mp4" autoplay loop mutes></video>
-        <p>I created the app, but I still lose all the time. But every once in a while, I get to see the congratulation animation I built...</p>
+        <p>I created the app, but I still lose all the time. But every once in a while, I get to see the little congratulatory animation I built...</p>
         <video src="${image_path}projects/guessthephrase-win.mp4" autoplay loop mutes></video>
         `
     },
