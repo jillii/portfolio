@@ -113,9 +113,20 @@ export const WORK = [
         slug: "travel-tech-titans",
         title: "Travel Tech Titans",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'Git'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         image: image_path + 'traveltechtitans.png',
-        overlay: 'white'
+        overlay: 'white',
+        body: `<p>The design I recieved for this site was beautiful, intricate, and complex.</p>
+        <img loading="lazy" src="${image_path}projects/ttt-hero.png" alt="travel tech titans hero"/>
+        <p>The designer specifically asked for subtle movement of the translucent backsplash. Movement that was almost undiscernible, but distictly present in one's line of vision. The design was careful yet ambitious - and almost impossible to code.</p>
+        <img loading="lazy" src="${image_path}projects/ttt-blurb.png" alt="travel tech titans blurb"/>
+        <p>But nothing is truly impossible in web development. Over the year I've learned little tricks to satisfy designs, while keeping the code clean and readable.</p>
+        <p>One of my favorite tricks is this one for making HTML tables responsive. No, there are not two tables - just one with the ability to cleanly break down on mobile.</p>
+        <img loading="lazy" src="${image_path}projects/ttt-mid-stage.png" alt="travel tech titans mid stage table"/>
+        <p>This trick utilizies HTML attributes hidden in the table cells. On mobile, the attributes' values are prepended to each table row using CSS.</p>
+        <img loading="lazy" src="${image_path}projects/ttt-mid-stage-tablet.png" alt="travel tech titans mid stage table on tablet"/>
+        <p>Simple, clean, readable - an elegant code solution to match an elegant design.</p>
+        `
     },
     {
         slug: "design-statements",
