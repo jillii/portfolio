@@ -28,6 +28,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-size: 21px;
+  transition: opacity 1s;
 }
 
 h1 {

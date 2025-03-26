@@ -18,7 +18,7 @@ export default function Card (props) {
               data-title={title} 
               style={overlay ? {color: '#fff'} : {}}>
             {image &&
-                isVideo ? <video src={image} autoPlay loop muted></video> : <img src={image} alt={title} />
+                isVideo ? <video src={image} autoPlay loop muted></video> : <img loading="lazy" src={image} alt={title} />
             }
         </Link>
     )
