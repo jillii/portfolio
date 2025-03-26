@@ -179,7 +179,17 @@ export const PROJECTS = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'Ruby', 'Rails', 'YouTube API', 'Git', 'Dokku'],
         link: 'https://playlistswithfriends.app/',
-        image: image_path + 'playlistswithfriends.mp4'
+        image: image_path + 'playlistswithfriends.mp4',
+        body: `<p>Sometimes you need to create a web app simply because you want it to exist.</p>
+        <video src="${image_path}projects/playlistswithfriends-home.mp4" autoplay muted loop></video>
+        <p>The internet is full of similar apps, but none that had everything I wanted them to. And they never look good...</p>
+        <p>Playlists With Friends is a web app where users can create playlists by adding tracks to them using the YouTube Search API. Once a playlist is created, its owner can add, remove, reorder, and listen to its tracks.</p>
+        <video src="${image_path}projects/playlistswithfriends-addvideo.mp4" autoplay muted loop></video>
+        <p>Playlists also have a special feature where users can invite friends on the site to "collab". This gives the invited user access to add new tracks and tags to the playlist. The user will recieve a notification about the invite, and the playlist will appear in the "Collabs" section on their account page.</p>
+        <img loading="lazy" src="${image_path}projects/playlistswithfriends-collabs.png" alt="playlists with friends collab section"/>
+        <p>This felt like a Rails site. I've been using Rails to build sites for a long time. It's the first framework I was exposed to as a young web developer back in 2015, and it's still my favorite to this day. Mostly, I've been looking for an excuse to build with it.</p>
+        <p>This site is a work in progress, but slated to be complete by this year. Stay tuned.</p>
+        `
     },
     {
         slug: "guess-the-phrase",
@@ -187,7 +197,9 @@ export const PROJECTS = [
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
         tech: ['JavaScript', 'React', 'Git'],
         link: 'https://jillii.github.io/guess-the-phrase/',
-        image: image_path + 'guessthephrase.mp4'
+        image: image_path + 'guessthephrase.mp4',
+        body: `<p></p>
+        `
     },
     {
         slug: "cake-factory",
