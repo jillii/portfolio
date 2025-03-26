@@ -1,7 +1,6 @@
 import './App.css'
 import './assets/Nav.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { HashLink as Anchor } from 'react-router-hash-link'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -15,6 +14,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Nav />
         <Routes>
           <Route path="/" element={<Home />}></Route>
