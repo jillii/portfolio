@@ -31,12 +31,12 @@ export const WORK = [
         link: 'https://www.quorumfcu.org/',
         image: image_path + 'quorum-homepage.png',
         body: `<p>QFCU wanted to adopt a younger, more modern tone. The project was essential a complete overhaul. I took the opportunity to improve the site's backend architecture.</p>
-        <img loading="lazy src="${image_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
+        <img loading="lazy" src="${image_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
         <p>My focus was to streamline user experience - turn repetitive, manual data-entry into streamlined automations. Previously, populating the rates page meant uploading an XML file with all the rates to the backend. The page would then render the new rates. This system was clunky and unecessarily complex - a new XML would need to be made to update even a single rate. So, I created a data type for rates, which could be updated in the dashboard.</p>
-        <img loading="lazy src="${image_path}projects/quorum-rate-backend.png" alt="rate backend"/>
+        <img loading="lazy" src="${image_path}projects/quorum-rate-backend.png" alt="rate backend"/>
         <p>Website updates should be quick and painless. Technology should help, not hurt.</p>
         <p>With help from my friends from design, I elevated the rates page user-experience with clear, well-styled rates tables.</p>
-        <img loading="lazy src="${image_path}projects/quorum-rate-table.png" alt="quorum rates table" />
+        <img loading="lazy" src="${image_path}projects/quorum-rate-table.png" alt="quorum rates table" />
         <p>And yes, they are easy to edit!</p>`
     },
     {
