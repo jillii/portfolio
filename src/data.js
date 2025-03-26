@@ -136,9 +136,8 @@ export const WORK = [
         link: 'http://designstatements-llc.com/',
         image: image_path + 'designstatements.mp4',
         overlay: 'white',
-        body: `<p>The website of a design agency needs a great design.</p>
+        body: `<p>The website of a design agency needs a great design. Nothing less than a pure reflection of its own work.</p>
         <img loading="lazy" src="${image_path}projects/design-statements-homepage.png" alt="design statements' homepage"/>
-        <p>Nothing less than a pure reflection of its own work.</p>
         <p>The Design Statements website design was inspired by paint chips commonly used by designers. The "chips" would open into sliders of images of homes re-imagined by Design Statements.</p>
         <video src="${image_path}projects/design-statements-chips.mp4" alt="design statements chips" autoplay muted loop></video>
         <p>It was eye-catching, yet tastful, like the interior designs it represented.</p>
@@ -150,9 +149,17 @@ export const WORK = [
         slug: "hyperloop",
         title: "Hyperloop",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['Git', 'CSS', 'JavaScript'],
+        tech: ['GitHub Pages', 'CSS', 'JavaScript', 'CSS Keyframe Animations', 'Slick Carousel'],
         link: 'https://companyon.vc/',
-        image: image_path + 'hyperloop.mp4'
+        image: image_path + 'hyperloop.mp4',
+        body: `<p>Listen, I think we should normalize bursts of confetti on company websites.</p>
+        <video src="${image_path}hyperloop.mp4" autoplay loop muted></video>
+        <p>The client let us run with this one, and as you can see, we did.</p>
+        <p>The animations were purely CSS / JS, and a little creativity. Each confetti burst is actually a series of images rushing past the eye.</p>
+        <img loading="lazy" src="${image_path}projects/web_heart_animation.png" alt="heart animation"/>
+        <p>CSS brings it to life. The event is so fast, that the confetti appears to fly out of the active dot.</p>
+        <p>All user-interactivity should be this extra.</p>
+        `
     }
 ]
 export const PROJECTS = [
