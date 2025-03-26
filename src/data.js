@@ -132,10 +132,19 @@ export const WORK = [
         slug: "design-statements",
         title: 'Design Statements LLC Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['WordPress', 'PHP', 'Git'],
+        tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UX/UI Design'],
         link: 'http://designstatements-llc.com/',
         image: image_path + 'designstatements.mp4',
-        overlay: 'white'
+        overlay: 'white',
+        body: `<p>The website of a design agency needs a great design.</p>
+        <img loading="lazy" src="${image_path}projects/design-statements-homepage.png" alt="design statements' homepage"/>
+        <p>Nothing less than a pure reflection of its own work.</p>
+        <p>The Design Statements website design was inspired by paint chips commonly used by designers. The "chips" would open into sliders of images of homes re-imagined by Design Statements.</p>
+        <video src="${image_path}projects/design-statements-chips.mp4" alt="design statements chips" autoplay muted loop></video>
+        <p>It was eye-catching, yet tastful, like the interior designs it represented.</p>
+        <video src="${image_path}designstatements.mp4" alt="design statements footer" autoplay muted loop></video>
+        <p>The client couldn't have been happier - this digital home for her work was truly representative of her elevated style.</p>
+        `
     },
     {
         slug: "hyperloop",
