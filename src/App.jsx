@@ -9,12 +9,14 @@ import { WORK, PROJECTS } from './data'
 import Project from './pages/Project'
 import ScrollToTop from './components/ScrollToTop.js'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
 
   return (
     <>
       <Analytics />
+      <SpeedInsights />
       <BrowserRouter>
         <ScrollToTop />
         <Nav />
