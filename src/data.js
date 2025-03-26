@@ -3,7 +3,7 @@ const image_path = '/assets/';
 export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
-    summary: "Web development is a craft.",
+    summary: "Web development as art.",
     bio: [
         "I'm Jill—web engineer for 9+ years.",
         "The first language I learned to program with was Java. The second was C.",
@@ -167,9 +167,11 @@ export const PROJECTS = [
         slug: "expletive",
         title: '!@#$% Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'Git'],
+        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation'],
         link: 'https://expletive.plumbing/',
-        image: image_path + 'expletiveplumbing.mp4'
+        image: image_path + 'expletiveplumbing.mp4',
+        body: `<p></p>
+        `
     },
     {
         slug: "playlists-with-friends",
@@ -191,9 +193,20 @@ export const PROJECTS = [
         slug: "cake-factory",
         title: 'Cake Factory Official',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum sapien dui, eu facilisis justo convallis quis. Praesent et dignissim dui.',
-        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'Git'],
+        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'GitHub Pages', 'DO Ant Media Server'],
         link: 'https://cakefactory.party/',
         image: image_path + 'cakefactory.mp4',
-        overlay: 'white'
+        overlay: 'white',
+        body: `<p>Cake Factory is a rave-organizing collective dedicated to bringing the raw energy of basement shows to the rave scene.</p>
+        <video src="${image_path}projects/cake-factory-nav.mp4" autoplay loop muted></video>
+        <p>I wanted the design of the website to be understated and playful, like the collective.</p>
+        <p>The site was primary informational, until 2020. During COVID all raves and parties came to a screaching halt. But people still wanted to connect, maybe even dance a little in their own homes. So I built out a "Stream" section of the website, complete with a live sream, as well as a live chat with little heart + cake reacts.</p>
+        <img loading="lazy" src="${image_path}projects/cake-factory-stream.png" alt="w00dy performing cake factory internet edition" />
+        <p>Cake Factory continued shows through COVID.</p>
+        <video src="${image_path}projects/cake-factory-ambient.mp4" autoplay loop muted></video>
+        <p>Technology often makes us feel alienated from one another, but in this case—it was just the opposite.</p>
+        <p>It was hardly a substitute for an actual show, but at least it brought the community back together. And everyone had a front row seat to these shows and could communicate without having to yell over the din :).</p>
+
+        `
     }
 ]
