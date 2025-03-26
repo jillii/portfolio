@@ -96,9 +96,18 @@ export const WORK = [
         slug: "allstacks-roi-calculator",
         title: "Allstacks ROI Calculator",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        tech: ['JavaScript'],
+        tech: ['JavaScript', 'Hubl'],
         link: 'https://www.allstacks.com/roi-calculator',
-        image: image_path + 'allstacks.mp4'
+        image: image_path + 'allstacks.mp4',
+        body: `<p>Every once in a while, a client will ask for a calculator.</p>
+        <video src="${image_path}projects/allstacks-roi-calc-savings.mp4" autoplay muted loop></video>
+        <p>I love building calculators - they're the perfect union of user-experience, logic, and math.</p>
+        <p>This calculator had a little secret though... The result could be NEGATIVE.</p>
+        <p>But that was the truth. There were edge cases in which customers would not save money with Allstacks' product. So I brought it to my manager's attention, and we developed a UX for negative results.</p>
+        <img loading="lazy" src="${image_path}projects/allstacks-roi-calc-negative-savings.png" alt="allstacks roi calculator showing negative savings" />
+        <p>If the result was negative, the user should be told explicitely that the product was not a fit. Otherwise, they would be scratching their heads, trying to make sense of negative savings.</p>
+        <video src="${image_path}allstacks.mp4" autoplay loop muted></video>
+        <p>The edge case was incredibly unlikely, but possible. The resulting calculator captured every possibility, and responded clearly.</p>`
     },
     {
         slug: "travel-tech-titans",
