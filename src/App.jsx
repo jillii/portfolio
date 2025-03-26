@@ -8,11 +8,13 @@ import About from './pages/About'
 import { WORK, PROJECTS } from './data'
 import Project from './pages/Project'
 import ScrollToTop from './components/ScrollToTop.js'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
   return (
     <>
+      <Analytics />
       <BrowserRouter>
         <ScrollToTop />
         <Nav />
