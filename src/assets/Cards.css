@@ -44,7 +44,6 @@
     top: 0;
     left: 0;
     background-color: #11111170;
-    backdrop-filter: blur(4px);
     opacity: 0;
     will-change: opacity;
     transition: opacity .25s;
