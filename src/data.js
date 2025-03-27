@@ -1,4 +1,5 @@
 const image_path = '/assets/';
+const aws_path = 'https://jills-portfolio.s3.amazonaws.com/';
 
 export const ABOUT = {
     name: "Jill Hoenig",
@@ -44,7 +45,7 @@ export const WORK = [
         title: "Beamble",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'CSS Keyframe Animations'],
         link: 'https://beamable.com/',
-        image: image_path + 'beamable.mp4',
+        image: aws_path + 'beamable.mp4',
         body: `<p>This was one of my favorite projects. The product was fun and future-forward, so the website had to reflect that.</p>
         <video src="${image_path}projects/beamable-homepage-hero-animation.mp4" alt="beamable homepage hero animation" autoplay loop muted></video>
         <p>With a little imagination, and a lot of CSS (684 lines of keyframe animation SCSS to be exact), I turned a beautiful design into an animated dream.</p>
@@ -59,7 +60,7 @@ export const WORK = [
         title: "Cybernetix Playbook",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         link: 'https://theroboticsplaybook.com/',
-        image: image_path + 'cybernetixplaybook.mp4',
+        image: aws_path + 'cybernetixplaybook.mp4',
         body: `<p>I had a lot of fun building this website. The client wanted it to look and behave like a book. Far from your standard site.</p>
         <video src="${image_path}projects/cybernetix-welcome.mp4" autoplay loop muted></video>
         <p>The idea had been proposed to a different dev team, and they estimated it would take about 230-280 hours. I built it in an eighth of the time. Sometimes all you need is a strong foundation to give you the flexibility to tackle curveballs.</p>
@@ -92,7 +93,7 @@ export const WORK = [
         title: "Allstacks ROI Calculator",
         tech: ['JavaScript', 'Hubl'],
         link: 'https://www.allstacks.com/roi-calculator',
-        image: image_path + 'allstacks.mp4',
+        image: aws_path + 'allstacks.mp4',
         body: `<p>Every once in a while, a client will ask for a calculator.</p>
         <video src="${image_path}projects/allstacks-roi-calc-savings.mp4" autoplay muted loop></video>
         <p>I love building calculators—they're the perfect union of user-experience, logic, and math.</p>
@@ -125,7 +126,7 @@ export const WORK = [
         title: 'Design Statements LLC Official',
         tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UX/UI Design'],
         link: 'http://designstatements-llc.com/',
-        image: image_path + 'designstatements.mp4',
+        image: aws_path + 'designstatements.mp4',
         body: `<p>The website of a design agency needs a great design. Nothing less than a pure reflection of its own work.</p>
         <img loading="lazy" src="${image_path}projects/design-statements-homepage.png" alt="design statements' homepage"/>
         <p>The Design Statements website design was inspired by paint chips commonly used by designers. The "chips" would open into sliders of images of homes re-imagined by Design Statements.</p>
@@ -140,7 +141,7 @@ export const WORK = [
         title: "Hyperloop",
         tech: ['GitHub Pages', 'CSS', 'JavaScript', 'CSS Keyframe Animations', 'Slick Carousel'],
         link: 'https://companyon.vc/',
-        image: image_path + 'hyperloop.mp4',
+        image: aws_path + 'hyperloop.mp4',
         body: `<p>Listen, I think we should normalize bursts of confetti on company websites.</p>
         <video src="${image_path}hyperloop.mp4" autoplay loop muted></video>
         <p>The client let us run with this one, and as you can see, we did.</p>
@@ -157,7 +158,7 @@ export const PROJECTS = [
         title: '!@#$% Official',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation'],
         link: 'https://expletive.plumbing/',
-        image: image_path + 'expletiveplumbing.mp4',
+        image: aws_path + 'expletiveplumbing.mp4',
         body: `<p>This is the official website of my IDM projects !@#$%.</p>
         <video src="${image_path}projects/expletive-music.mp4" autoplay loop muted></video>
         <p>The design is a reflection of my sound—sparse, alien, glittery, and cute.</p>
@@ -176,7 +177,7 @@ export const PROJECTS = [
         title: 'Playlists With Friends (WIP)',
         tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku'],
         link: 'https://playlistswithfriends.app/',
-        image: image_path + 'playlistswithfriends.mp4',
+        image: aws_path + 'playlistswithfriends.mp4',
         body: `<p>Sometimes you need to create a web app simply because you want it to exist.</p>
         <video src="${image_path}projects/playlistswithfriends-home.mp4" autoplay muted loop></video>
         <p>The internet is full of similar apps, but none that had everything I wanted them to. And they never look good...</p>
@@ -193,7 +194,7 @@ export const PROJECTS = [
         title: 'Guess The Phrase',
         tech: ['JavaScript', 'React', 'CSS'],
         link: 'https://jillii.github.io/guess-the-phrase/',
-        image: image_path + 'guessthephrase.mp4',
+        image: aws_path + 'guessthephrase.mp4',
         body: `<p>I built this app to play in my spare time.</p>
         <video src="${image_path}projects/guessthephrase-1.mp4" autoplay loop mutes></video>
         <p>If you were a 90s child like I was, you probably remember watching <i>a lot</i> of Wheel Of Fortune with your parents. I designed this app to behave like the Wheel Of Fortune board—revealing one correctly guessed letter at a time. </p>
@@ -208,7 +209,7 @@ export const PROJECTS = [
         title: 'Cake Factory Official',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'GitHub Pages', 'DO Ant Media Server'],
         link: 'https://cakefactory.party/',
-        image: image_path + 'cakefactory.mp4',
+        image: aws_path + 'cakefactory.mp4',
         body: `<p>Cake Factory is a rave-organizing collective dedicated to bringing the raw energy of basement shows to the rave scene.</p>
         <video src="${image_path}projects/cake-factory-nav.mp4" autoplay loop muted></video>
         <p>I wanted the design of the website to be understated and playful, like the collective.</p>
