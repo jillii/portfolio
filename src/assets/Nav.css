@@ -15,6 +15,7 @@ nav ul {
 }
 nav ul li a {
     color: initial;
+    vertical-align: middle;
 }
 
 nav a:focus {
@@ -39,8 +40,44 @@ nav ul li:hover a[href='/']:before {
     background-image: url(/assets/bubble-jill--1.png);
 }
 
+.status {
+    position: relative;
+    border: 1px solid;
+    border-radius: 22px;
+    padding: 4px 28px;
+    background-color: #111;
+    color: #fff;
+}
+.status-text {
+    margin: 0;
+}
+
+.status-text:before {
+    content: '';
+    display: inline-block;
+    margin-right: 21px;    
+    width: 10px;
+    height: 10px;
+    background-color: #3dff81;
+    border-radius: 50%;
+    vertical-align: middle;
+    animation: flashing 1s alternate-reverse infinite;
+}
+
 @media (prefers-color-scheme: dark) {
+    .status {
+        border-color: #fff;
+    }
     nav ul li a[href='/']:before {
         filter: invert(1);
+    }
+}
+
+@keyframes flashing {
+    from {
+        box-shadow: 0 0 22px #3dff81;
+    }    
+    to {
+        box-shadow: 0 0 4px #3dff81;
     }
 }
