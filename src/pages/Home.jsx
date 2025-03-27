@@ -22,7 +22,7 @@ function Home() {
         <>
             <section>
                 <div className="site-container">
-                    <h1 className="bio">{ABOUT.summary} <span key={index} id="as-text" className="as-text">{text}</span></h1>
+                    <h1 className="bio site-title">{ABOUT.summary} <span key={index} id="as-text" className="as-text">{text}</span></h1>
                 </div>
             </section>
             <Section title="Websites I've built for companies" list={WORK} />
