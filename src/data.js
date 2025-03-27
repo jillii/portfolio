@@ -124,7 +124,7 @@ export const WORK = [
     {
         slug: "design-statements",
         title: 'Design Statements LLC Official',
-        tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UX/UI Design'],
+        tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UI/UX Design'],
         link: 'http://designstatements-llc.com/',
         image: aws_path + 'designstatements.mp4',
         body: `<p>The website of a design agency needs a great design. Nothing less than a pure reflection of its own work.</p>
@@ -156,7 +156,7 @@ export const PROJECTS = [
     {
         slug: "expletive",
         title: '!@#$% Official',
-        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'UX/UI Design'],
+        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'UI/UX Design'],
         link: 'https://expletive.plumbing/',
         image: aws_path + 'expletiveplumbing.mp4',
         body: `<p>This is the official website of my IDM projects !@#$%.</p>
@@ -175,7 +175,7 @@ export const PROJECTS = [
     {
         slug: "playlists-with-friends",
         title: 'Playlists With Friends (WIP)',
-        tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku', 'UX/UI Design'],
+        tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku', 'UI/UX Design'],
         link: 'https://playlistswithfriends.app/',
         image: aws_path + 'playlistswithfriends.mp4',
         body: `<p>Sometimes you need to create a web app simply because you want it to exist.</p>
@@ -192,7 +192,7 @@ export const PROJECTS = [
     {
         slug: "guess-the-phrase",
         title: 'Guess The Phrase',
-        tech: ['JavaScript', 'React', 'CSS', 'UX/UI Design'],
+        tech: ['JavaScript', 'React', 'CSS', 'UI/UX Design', 'GitHub Pages'],
         link: 'https://jillii.github.io/guess-the-phrase/',
         image: aws_path + 'guessthephrase.mp4',
         body: `<p>I built this app to play in my spare time.</p>
@@ -207,7 +207,7 @@ export const PROJECTS = [
     {
         slug: "cake-factory",
         title: 'Cake Factory Official',
-        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'GitHub Pages', 'DO Ant Media Server', 'UX/UI Design'],
+        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Firebase', 'GitHub Pages', 'DO Ant Media Server', 'UI/UX Design'],
         link: 'https://cakefactory.party/',
         image: aws_path + 'cakefactory.mp4',
         body: `<p>Cake Factory is a rave-organizing collective dedicated to bringing the raw energy of basement shows to the rave scene.</p>
