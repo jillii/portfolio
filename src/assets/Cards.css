@@ -78,7 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px 9px;
-    /* max-width: 800px; */
+    max-width: 1000px;
     margin-bottom: 67px;
 }
 .card-tech-filter .filter {
@@ -88,7 +88,8 @@
     transition: background-color .25s, color .25s;
 }
 
-.card-tech-filter .filter:hover {
+.card-tech-filter .filter:hover,
+.filter.active {
     color: #fff;
 }
 
@@ -105,7 +106,8 @@
     background-blend-mode: hard-light
 }
 
-.card-tech-filter .filter:hover:before {
+.card-tech-filter .filter:hover:before,
+.filter.active:before {
     left: 0;
 }
 

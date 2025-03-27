@@ -10,6 +10,7 @@ html {
 }
 .site-container {
   max-width: min(1980px, 90%);
+  width: 100%;
   margin: 0 auto;
 }
 img {
@@ -27,6 +28,12 @@ section:first-of-type {
 
 h1, h2, h3, h4 {
   font-weight: 200
+}
+
+label {
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .flexbox {

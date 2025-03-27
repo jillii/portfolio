@@ -1,9 +1,31 @@
+import { useState } from 'react'
 import Card from './Card'
 
 export default function Section (props) {
     const title = props.title
-    const list = props.list
+    const initial = props.list
+    const [list, setList] = useState(initial)
     let filterTech = []
+
+    const handleFilter = (e) => {
+        const target = e.target
+        const tech = target.dataset.tech
+        
+        target.classList.add('active')
+        
+        if (tech == 'reset') {
+            setList(initial)
+            Array.from(document.getElementsByClassName('active')).map((el) => el.classList.remove('active'))
+        } else {
+            let newList = []
+            list.map((project) => {
+                if (project.tech.indexOf(tech) !== -1) {
+                    newList.push(project)
+                }
+            })
+            setList(newList)
+        }
+    }
 
     return (
         <section className="card-section">
@@ -17,8 +39,10 @@ export default function Section (props) {
                 })}
             </div>
             <div className='site-container'>
+                <label>Tech Stack</label>
                 <ul className="card-tech-filter">
-                    {filterTech.map((tech, index) => <li key={index} class="tech-pill filter">{tech}</li>)}
+                    {filterTech.map((tech, index) => <li key={index} class="tech-pill filter" onClick={handleFilter} data-tech={tech}>{tech}</li>)}
+                    <li className='tech-pill filter' data-tech="reset" onClick={handleFilter}>Reset</li>
                 </ul>
             </div>
         </section>
