@@ -51,7 +51,9 @@ nav ul li:hover a[href='/']:before {
 .status-text {
     margin: 0;
 }
-
+.status-text:after {
+    content: attr(data-desktop);
+}
 .status-text:before {
     content: '';
     display: inline-block;
@@ -70,6 +72,19 @@ nav ul li:hover a[href='/']:before {
     }
     nav ul li a[href='/']:before {
         filter: invert(1);
+    }
+}
+
+@media (max-width: 480px) {
+    .status {
+        padding: 4px 12px;
+        font-size: 12px;
+    }
+    .status-text:before {
+        margin-right: 8px;
+    }
+    .status-text:after {
+        content: attr(data-mobile);
     }
 }
 
