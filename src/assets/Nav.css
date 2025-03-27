@@ -38,3 +38,9 @@ nav ul li a[href='/']:before {
 nav ul li:hover a[href='/']:before {
     background-image: url(/assets/bubble-jill--1.png);
 }
+
+@media (prefers-color-scheme: dark) {
+    nav ul li a[href='/']:before {
+        filter: invert(1);
+    }
+}

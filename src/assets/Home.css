@@ -44,3 +44,11 @@
         margin-bottom: 0;
     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    .section-head {
+        background-color: #11111167;
+    }
+  }
+  

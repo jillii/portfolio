@@ -26,6 +26,15 @@ footer .flexbox {
     animation: dropshadow .25s forwards ease;
 }
 
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: #2e2e2e;
+    }
+    .socials img {
+        filter: invert(1)
+    }
+}
+
 
 @media (max-width: 768px) {
     footer {

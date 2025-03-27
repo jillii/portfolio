@@ -11,6 +11,7 @@
 .card {
     position: relative;
     max-height: 80dvh;
+    background-color: #fff;
     overflow: hidden;
 }
 .card-data {
@@ -78,7 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px 9px;
-    max-width: 800px;
+    /* max-width: 800px; */
     margin-bottom: 67px;
 }
 .card-tech-filter .filter {

@@ -35,6 +35,12 @@
     transform: translateX(-50%);
 }
 
+@media (prefers-color-scheme: dark) {
+    .bubble {
+        box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc, inset 88px 0 60px #c2d8fe, inset -20px -60px 100px #fde9ea, inset 0 50px 140px #fde9ea, 0 0 5px #fff, 0 0 104px #fff;
+    }
+}
+
 @keyframes wobble {
     0% {
         transform: translate(9px, -8px);
