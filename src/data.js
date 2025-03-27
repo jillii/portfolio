@@ -3,7 +3,8 @@ const image_path = '/assets/';
 export const ABOUT = {
     name: "Jill Hoenig",
     title: "Web Engineer",
-    summary: "Web development as art.",
+    summary: "Web development as ",
+    list: ['art.', 'connection.', 'play.', 'inspiration.', 'expression.'],
     bio: [
         "I'm Jill—web engineer for 9+ years.",
         "The first language I learned to program with was Java. The second was C.",

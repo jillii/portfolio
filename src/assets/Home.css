@@ -1,5 +1,5 @@
 .bio {
-    max-width: 800px;
+    max-width: 680px;
     margin-bottom: 138px;
 }
 .section-head {
@@ -11,4 +11,21 @@
     background-color: #ffffff99;
     backdrop-filter: blur(40px);
     z-index: 998;
+}
+
+.as-text {
+    position: relative;
+    opacity: 0;
+    animation: animateIn 1s forwards linear;
+}
+
+@keyframes animateIn {
+    from {
+        opacity: 0;
+        filter: blur(90px);
+    }
+    to {
+        opacity: 1;
+        filter: none;
+    }
 }
