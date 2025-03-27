@@ -26,12 +26,26 @@ footer .flexbox {
     animation: dropshadow .25s forwards ease;
 }
 
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 33px;
+        padding: 67px 0 21px;
+    }
+    .footer-cta {
+        margin-bottom: 67px;
+    }
+}
+
 @media (max-width: 480px) {
     footer .site-container {
         flex-direction: column;
     }
     .socials {
         order: -1
+    }
+    footer .flexbox {
+        flex-direction: column;
     }
 }
 

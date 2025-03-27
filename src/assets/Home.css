@@ -4,7 +4,7 @@
 }
 .section-head {
     position: sticky;
-    width: auto;
+    width: 100%;
     top: 102px;
     padding: 18px 28px;
     border-radius: 13px;
@@ -27,5 +27,20 @@
     to {
         opacity: 1;
         filter: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .bio {
+        margin-bottom: 102px;
+    }
+    .section-head {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .bio {
+        margin-bottom: 0;
     }
 }
