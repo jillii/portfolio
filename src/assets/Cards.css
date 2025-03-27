@@ -33,7 +33,7 @@
     width: 100%;
     object-fit: cover;
     will-change: filter;
-    transition: filter .5s;
+    transition: filter .2s;
 }
 
 .card:after {
@@ -46,7 +46,7 @@
     background-color: #11111170;
     opacity: 0;
     will-change: opacity;
-    transition: opacity .25s;
+    transition: opacity .2s;
     z-index: 1;
 }
 
