@@ -16,7 +16,7 @@ export default function Card (props) {
               element={<Project title={title} tech={tech} body={body} />} 
               className="card" >
             {image &&
-                isVideo ? <video src={image} autoPlay loop muted></video> : <img loading="lazy" src={image} alt={title} />
+                isVideo ? <video src={image} autoPlay loop muted playsInline></video> : <img loading="lazy" src={image} alt={title} />
             }
             <div className='card-data'>
                 <h3>{title}</h3>
