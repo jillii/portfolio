@@ -15,6 +15,7 @@
     opacity: 0;
     z-index: 2;
     transform: translateY(-50%);
+    will-change: opacity;
     transition: opacity .25s;
 }
 .card-data h3 {
@@ -24,6 +25,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    will-change: filter;
+    transition: filter .5s;
 }
 
 .card:after {
@@ -36,8 +39,13 @@
     background-color: #11111170;
     backdrop-filter: blur(4px);
     opacity: 0;
-    transition: opacity .25s, backdrop-filter .5s;
+    will-change: opacity;
+    transition: opacity .25s;
     z-index: 1;
+}
+
+.card:hover :is(img, video) {
+    filter: blur(4px);
 }
 
 .card:hover:after {
