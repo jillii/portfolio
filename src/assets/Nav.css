@@ -48,8 +48,21 @@ nav ul li:hover a[href='/']:before {
     background-color: #111;
     color: #fff;
 }
+.status .copied-message {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    right: 21px;
+    font-size: 14px;
+    transform: translateY(-50%);
+    animation: fade .2s forwards linear;
+}
+
 .status-text {
     margin: 0;
+    display: flex;
+    align-items: center;
+    transition: opacity .25s;
 }
 .status-text:after {
     content: attr(data-desktop);
@@ -65,6 +78,31 @@ nav ul li:hover a[href='/']:before {
     vertical-align: middle;
     animation: flashing 1s alternate-reverse infinite;
 }
+.status .hover-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0;
+    padding: 0 21px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-family: monospace;
+    letter-spacing: 2px;
+    transition: opacity .25s;
+    box-sizing: border-box;
+}
+
+.status:hover .status-text {
+    opacity: 0;
+}
+.status:hover .hover-text {
+    opacity: 1;
+}
 
 @media (prefers-color-scheme: dark) {
     .status {
@@ -72,6 +110,12 @@ nav ul li:hover a[href='/']:before {
     }
     nav ul li a[href='/']:before {
         filter: invert(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .status-text:after {
+        content: attr(data-mobile);
     }
 }
 
@@ -83,9 +127,6 @@ nav ul li:hover a[href='/']:before {
     .status-text:before {
         margin-right: 8px;
     }
-    .status-text:after {
-        content: attr(data-mobile);
-    }
 }
 
 @keyframes flashing {
@@ -94,5 +135,14 @@ nav ul li:hover a[href='/']:before {
     }    
     to {
         box-shadow: 0 0 4px #3dff81;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

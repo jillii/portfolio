@@ -6,7 +6,7 @@ export default function Footer () {
     return (
         <footer id="contact">
             <div className="site-container">
-                <h2 className="footer-cta">Let me know how I can help you. <a href='mailto:jho3292@gmail.com'>Send me an email.</a></h2>
+                <h2 className="footer-cta">Let me know how I can help you. <a href='mailto:hello@jill.digital'>Send me an email.</a></h2>
                 <div className='flexbox'>
                     <p>©2025 Jill</p>
                     {CONTACT.socials &&
