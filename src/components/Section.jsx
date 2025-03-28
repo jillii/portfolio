@@ -29,7 +29,7 @@ export default function Section (props) {
 
     return (
         <section className="card-section">
-            <div className="site-container  section-head">
+            <div className="site-container section-head">
                 <h2>{title}</h2>
             </div>
             <div className="card-container">
@@ -41,7 +41,7 @@ export default function Section (props) {
             <div className='site-container'>
                 <label>Tech Stack</label>
                 <ul className="card-tech-filter">
-                    {filterTech.map((tech, index) => <li key={index} class="tech-pill filter" onClick={handleFilter} data-tech={tech}>{tech}</li>)}
+                    {filterTech.map((tech, index) => <li key={index} className="tech-pill filter" onClick={handleFilter} data-tech={tech}>{tech}</li>)}
                     <li className='tech-pill filter' data-tech="reset" onClick={handleFilter}>Reset</li>
                 </ul>
             </div>
