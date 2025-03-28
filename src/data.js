@@ -28,7 +28,7 @@ export const WORK = [
     {
         slug: "quorum",
         title: "Quorum Federal Credit Union",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'SEO'],
         link: 'https://www.quorumfcu.org/',
         image: image_path + 'quorum-homepage.png',
         body: `<p>QFCU wanted to adopt a younger, more modern tone. The project was essential a complete overhaul. I took the opportunity to improve the site's backend architecture.</p>
@@ -43,7 +43,7 @@ export const WORK = [
     {
         slug: 'beamable',
         title: "Beamble",
-        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'CSS Keyframe Animations', 'Leadership', 'Code Review'],
+        tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'Keyframe Animations', 'Leadership', 'Code Review'],
         link: 'https://beamable.com/',
         image: aws_path + 'beamable.mp4',
         body: `<p>This was one of my favorite projects. The product was fun and future-forward, so the website had to reflect that.</p>
@@ -139,7 +139,7 @@ export const WORK = [
     {
         slug: "hyperloop",
         title: "Hyperloop",
-        tech: ['GitHub Pages', 'CSS', 'JavaScript', 'CSS Keyframe Animations', 'Slick Carousel'],
+        tech: ['GitHub Pages', 'CSS', 'JavaScript', 'Keyframe Animations'],
         link: 'https://companyon.vc/',
         image: aws_path + 'hyperloop.mp4',
         body: `<p>Listen, I think we should normalize bursts of confetti on company websites.</p>
@@ -156,13 +156,13 @@ export const PROJECTS = [
     {
         slug: "expletive",
         title: '!@#$% Official',
-        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'CSS Framework Animation', 'UI/UX Design'],
+        tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Keyframe Animations', 'UI/UX Design'],
         link: 'https://expletive.plumbing/',
         image: aws_path + 'expletiveplumbing.mp4',
         body: `<p>This is the official website of my IDM projects !@#$%.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/expletive-music.mp4" autoplay loop muted></video>
         <p>The design is a reflection of my sound—sparse, alien, glittery, and cute.</p>
-        <p>This site runs the gamut on CSS keyframe animations. It's where I came up with a little trick I wrote about <a href="https://medium.com/@jillii/traveling-through-space-with-pure-css-1b113c58ec1b" target="_blank">here</a>.</p>
+        <p>This site runs the gamut on keyframe animations. It's where I came up with a little trick I wrote about <a href="https://medium.com/@jillii/traveling-through-space-with-pure-css-1b113c58ec1b" target="_blank">here</a>.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/expletive-stars.mp4" autoplay loop muted></video>
         <p>This site is built using a framework called Jekyll. I chose Jekyll for this site, because there's essentially no database—all data is stored in a YML file. That's why it's so fast :)</p>
         <p>It utilizes JavaScript for filtering, as well as the media player, which I built from scratch.</p>
