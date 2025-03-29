@@ -18,6 +18,32 @@ nav ul li a {
     vertical-align: middle;
 }
 
+nav .mobile-menu, nav .mobile-menu .drawer {
+    display: inherit;
+    gap: inherit
+}
+
+nav .mobile-trigger {
+    display: none;
+    appearance: none;
+    align-self: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    mask-image: url(/assets/bars-solid.svg);
+    background-color: currentColor;
+    mask-size: contain;
+    height: 21px;
+    width: 21px;
+    transition: background-color .25s;
+}
+
+nav .mobile-trigger.active {
+    background-color: #646cff;
+}
+
 nav a:focus {
     outline: none;
 }
@@ -51,11 +77,8 @@ nav ul li:hover a[href='/']:before {
 .status .copied-message {
     position: absolute;
     margin: 0;
-    top: 50%;
-    right: 21px;
     font-size: 14px;
-    transform: translateY(-50%);
-    animation: fade .2s forwards linear;
+    color: #111;
 }
 
 .status-text {
@@ -104,6 +127,74 @@ nav ul li:hover a[href='/']:before {
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .status {
+        padding: 4px 33px;
+    }
+    .status-text:after {
+        content: attr(data-mobile);
+    }
+    .status .hover-text {
+        gap: 8px;
+        padding: 8px;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+    .status .hover-text img {
+        width: 12px;
+    }
+    .status .copied-message {
+        top: unset;
+        bottom: 100%;
+        transform: unset;
+    }
+}
+
+@media (max-width: 560px) {
+    nav {
+        background-color: #fff;
+    }
+    nav ul {
+        padding: 24px 0;
+    }
+    nav .mobile-trigger {
+        display: inline-block;
+    }
+    nav .mobile-menu {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    
+    nav .mobile-menu .drawer {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin-top: -100%;
+        z-index: -1;
+        transition: margin-top .25s linear;
+    }
+
+    nav .mobile-trigger.active + .mobile-menu .drawer {
+        margin-top: 0;
+        z-index: 1;
+    }
+
+    nav .mobile-menu li {
+        border-bottom: 1px solid;
+    }
+
+    nav .mobile-menu li a {
+        display: block;
+        width: 100%;
+        padding: 12px 21px;
+        box-sizing: border-box;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     .status {
         border-color: #fff;
@@ -114,23 +205,19 @@ nav ul li:hover a[href='/']:before {
     nav ul li a[href='/']:before {
         filter: invert(1);
     }
+
+    .status .copied-message {
+        color: #fff;
+    }
+
+    @media (max-width: 560px) {
+        nav,
+        nav .mobile-menu {
+            background-color: #111;
+        }
+    }
 }
 
-@media (max-width: 768px) {
-    .status-text:after {
-        content: attr(data-mobile);
-    }
-}
-
-@media (max-width: 480px) {
-    .status {
-        padding: 4px 12px;
-        font-size: 12px;
-    }
-    .status-text:before {
-        margin-right: 8px;
-    }
-}
 
 @keyframes flashing {
     from {
@@ -141,11 +228,13 @@ nav ul li:hover a[href='/']:before {
     }
 }
 
-@keyframes fade {
+@keyframes fadeUp {
     from {
-        opacity: 0;
+        bottom: 100%;
     }
+
     to {
-        opacity: 1;
+        bottom: calc(100% + 25px);
     }
+    
 }

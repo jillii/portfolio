@@ -12,7 +12,7 @@ export default function Project (props) {
             <div className="site-container">
                 <h1 className="project-title">{title}</h1>
                 {tech && <ul className="tech">{tech.map((item, index) => <li className="tech-pill" key={index}>{item}</li>)}</ul>}
-                {body && <div class="project-body"><ReactMarkdown children={body} rehypePlugins={[rehypeRaw]} /></div>}
+                {body && <div className="project-body"><ReactMarkdown children={body} rehypePlugins={[rehypeRaw]} /></div>}
             </div>
         </section>
     )

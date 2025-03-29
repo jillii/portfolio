@@ -6,14 +6,16 @@ export default function Status () {
     const hover = "hello@jill.digital"
     const [copiedMsg, setCopiedMsg] = useState('')
     
-    const addToClipboard = (e) => {
+    const addToClipboard = () => {
         navigator.clipboard.writeText('hello@jill.digital')
         setCopiedMsg('copied!')
+        document.getElementById('copiedMsg').style.animation = 'fadeUp 1s linear forwards'
     }
-
+    
     useEffect(() => {
         const timer = setTimeout(() => {
-            setCopiedMsg('');
+            document.getElementById('copiedMsg').style.animation = ''
+            setCopiedMsg('')
         }, 500);
         return () => clearTimeout(timer)
     }, [copiedMsg])
