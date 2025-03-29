@@ -20,7 +20,7 @@ export default function Section (props) {
                 })}
             </div>
             <div className='site-container'>
-                <label>Tech Stack</label>
+                <label>Filter by language / technology:</label>
                 <Filter list={list} setList={setList} filterTech={filterTech} initial={initial} />
             </div>
         </section>

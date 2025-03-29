@@ -12,6 +12,7 @@ export default function () {
               <Status />
               <li><Link to="/about/">About</Link></li>
               <li><Anchor to="#contact">Contact</Anchor></li>
+              <li><a href='https://jillii.github.io/resume/' target='_blank'>CV</a></li>
             </ul>
           </div>
         </nav>

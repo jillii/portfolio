@@ -14,7 +14,7 @@ function Home() {
     }
     
     useEffect(() => {
-        const intervalID = setInterval(getNext, 4000);
+        const intervalID = setInterval(getNext, 2500);
         return () => clearInterval(intervalID);
     }, [getNext])
 
@@ -25,7 +25,7 @@ function Home() {
                     <h1 className="bio site-title">{ABOUT.summary} <span key={index} id="as-text" className="as-text">{text}</span></h1>
                 </div>
             </section>
-            <Section title="Websites I've built for companies" list={WORK} />
+            <Section title="Websites I've built for clients" list={WORK} />
             <Section title="Websites I've built for myself" list={PROJECTS} />
         </>
     )

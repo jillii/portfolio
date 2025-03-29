@@ -7,10 +7,9 @@ export const ABOUT = {
     summary: "Web development as ",
     list: ['art.', 'connection.', 'play.', 'inspiration.', 'expression.'],
     bio: [
-        "I'm Jill—web engineer for 9+ years.",
-        "The first language I learned to program with was Java. The second was C.",
-        "While my professional work focuses heavily towards frontend, my background in object-oriented / low-level programming and continuous stream of backend-heavy side projects allows my to bridge the two worlds.",
-        "I have built award-winning websites for large agencies, and helped small companies grow with a polished, high-performing websites.",
+        "I'm Jill—Web engineer. 10 years agency experience.",
+        "My journey started with Java, followed by C, and has led to a career focused on frontend. But my background in object-oriented/low-level programming and steady stream of backend-heavy side projects allows me to bridge the two worlds.",
+        "I've built award-winning websites for major agencies and helped SMEs grow with polished, high-performance sites.",
         "I lived through the dawn of the internet, and it captures my imagination to this day",
         "Web development is an art, and it's my favorite kind."
     ]
@@ -31,39 +30,39 @@ export const WORK = [
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'SEO'],
         link: 'https://www.quorumfcu.org/',
         image: image_path + 'quorum-homepage.png',
-        body: `<p>QFCU wanted to adopt a younger, more modern tone. The project was essential a complete overhaul. I took the opportunity to improve the site's backend architecture.</p>
+        body: `<p>QFCU aimed to adopt a younger, more modern tone, which required a full overhaul. I took the opportunity to enhance the site's backend architecture for improved functionality and scalability.</p>
         <img loading="lazy" src="${image_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
-        <p>My focus was to streamline user experience—turn repetitive, manual data-entry into streamlined automations. Previously, populating the rates page meant uploading an XML file with all the rates to the backend. The page would then render the new rates. This system was clunky and unecessarily complex—a new XML would need to be made to update even a single rate. So, I created a data type for rates, which could be updated in the dashboard.</p>
+        <p>My goal was to streamline user experience—turn repetitive, manual data entry into seamless automations. Previously, populating the Rates page involved uploading an XML file with all the rates to the backend. This process was clunky and overly complicated—just updating a single rate required generating a new XML. To solve this, I created a custom data type for rates, allowing them to be updated directly in the dashboard.</p>
         <img loading="lazy" src="${image_path}projects/quorum-rate-backend.png" alt="rate backend"/>
-        <p>Website updates should be quick and painless. Technology should help, not hurt.</p>
-        <p>With help from my friends from design, I elevated the rates page user-experience with clear, well-styled rates tables.</p>
+        <p>Website updates should be quick and painless.</p>
+        <p>In collaboration with the design team, I improved the Rates page user experience by creating clear, well-styled rates tables.</p>
         <img loading="lazy" src="${image_path}projects/quorum-rate-table.png" alt="quorum rates table" />
         <p>And yes, they are easy to edit!</p>`
     },
     {
         slug: 'beamable',
-        title: "Beamble",
+        title: "Beamable",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'Keyframe Animations', 'Leadership', 'Code Review'],
         link: 'https://beamable.com/',
         image: aws_path + 'beamable.mp4',
-        body: `<p>This was one of my favorite projects. The product was fun and future-forward, so the website had to reflect that.</p>
+        body: `<p>The website I created for Beamable, a game development platform, was one of my favorite projects. With a fun, future-forward product, they needed a website to match.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/beamable-homepage-hero-animation.mp4" alt="beamable homepage hero animation" autoplay loop muted></video>
-        <p>With a little imagination, and a lot of CSS (684 lines of keyframe animation SCSS to be exact), I turned a beautiful design into an animated dream.</p>
-        <p>Everything was treated with a tasteful amount of whimsy.</p>
+        <p>With a little imagination and a lot of CSS (684 lines of keyframe animations SCSS, to be exact), I turned a beautiful design into a playful, animated dreamworld.</p>
+        <p>Interactive elements made exploring the site feel like gameplay.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/beamable-blog.mp4" alt="beamable blog hero" autoplay loop muted></video>
-        <p>All the animations were subtle. I implemented slight delay offsets for intrigue.</p> 
+        <p>The animations were deliberately subtle, with slight delay offsets to add a sense of intrigue.</p> 
         <video playsinline webkit-playsinline src="${image_path}projects/beamable-customers-hero.mp4" alt="beamable customers hero" autoplay loop muted></video>
-        <p>This project was a testiment to what a little love and imagination can do for a site. Web development is more than just a job for me. It's an opportunity to create something incredible.</p>`
+        <p>This project is a testament to what creativity and passion can do to elevate a site. Web development isn't just a job for me—it's a chance to build something extraordinary.</p>`
     },
     {
         slug: "cybernetix-playbook",
-        title: "Cybernetix Playbook",
+        title: "Cybernetix Ventures",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress'],
         link: 'https://theroboticsplaybook.com/',
         image: aws_path + 'cybernetixplaybook.mp4',
         body: `<p>I had a lot of fun building this website. The client wanted it to look and behave like a book. Far from your standard site.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/cybernetix-welcome.mp4" autoplay loop muted></video>
-        <p>The idea had been proposed to a different dev team, and they estimated it would take about 230-280 hours. I built it in an eighth of the time. Sometimes all you need is a strong foundation to give you the flexibility to tackle curveballs.</p>
+        <p>The project was initially pitched to another dev team, who estimated it would take 230-280 hours. I completed it 1/8 of that time, about 32 hours. Sometimes all you need is a strong foundation to give you the flexibility to tackle curveballs.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/cybernetix-product-development.mp4" autoplay loop muted></video>
         <p>There's no WordPress plugin or JavaScript library to satisfy this ask. The behavior is simple JavaScript, and the appearance is just CSS.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/cybernetix-verticle.mp4" autoplay loop muted></video>
@@ -71,22 +70,22 @@ export const WORK = [
     },
     {
         slug: "companyon",
-        title: "Companyon",
+        title: "Companyon Ventures",
         tech: ['Leadership', 'PHP', 'JavaScript', 'SCSS', 'WordPress', 'Code Review'],
         link: 'https://companyon.vc/',
         image: image_path + 'companyon.png',
-        body: `<p>This was the first website I built as a Tech Lead.</p>
+        body: `<p>This was the first website I built as a Tech Lead, created for a B2B tech startup-focused venture capital firm.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/companyon-homepage-hero.mp4" autoplay loop muted></video>
-        <p>The team was small—just me and a junior developer. But it was all the same to me, and I wanted to be the best lead possible. This was the perfect project to train with, because it was small—yet the unique design posed a few little coding challenges.</p>
+        <p>The team was small—just myself and a junior developer—but that didn't change my commitment to being the best lead I could be. This project was the ideal educational tool: small in scope, yet the unique design presented some interesting coding challenges.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/companyon-color-change-svgs.mp4" autoplay loop muted></video>
-        <p>This design required us to really dig into SVG code. Those little images carry an entire ecosystem (of code) inside of them—and we were bending the laws of nature. It was a learning opportunity for everyone, including me.</p>
+        <p>This design required us to really dig into SVG code. SVGs may look like normal images, but they're actually just code, and can be manipulated as such. We were extending their functionality beyond what either of us knew was possible. It was a valuable learning experience for the whole team.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/companyon-pixel-buttons.mp4" autoplay loop muted></video>
-        <p>I've had some pretty awful mentors. People who were not available, who didn't care. My goal was to be the opposite of that.</p>
+        <p>I’ve had my share of awful mentors—people who were unavailable and disengaged. My goal was to be the opposite of that.</p>
         <img loading="lazy" src="${image_path}projects/companyon-blog-hero.png" alt="companyon blog post hero"/>
-        <p>I wanted to inspire—to share my excitement for code. I qualified all my instructions and advice with "but there could be a better way..." to open the door to experimentation.</p>
+        <p>I aimed to inspire and share my excitement for code. I framed all my instructions and advice with “But there could be a better way...” to encourage experimentation.</p>
         <img loading="lazy" src="${image_path}projects/companyon-recent-posts.png" alt="companyon recent posts"/>
-        <p>I set the standard high from the start. I held the whole team to the same standard that I held myself.</p>
-        <p> The client loved the final product, and we were officially a team.</p>`
+        <p>I set a high standard from the start. I held the team to the same level I hold myself.</p>
+        <p>The client loved the final product, and that’s when we truly became a team.</p>`
     },
     {
         slug: "allstacks-roi-calculator",
@@ -94,15 +93,15 @@ export const WORK = [
         tech: ['JavaScript', 'Hubl'],
         link: 'https://www.allstacks.com/roi-calculator',
         image: aws_path + 'allstacks.mp4',
-        body: `<p>Every once in a while, a client will ask for a calculator.</p>
+        body: `<p>Every so often, a client will ask for a calculator.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/allstacks-roi-calc-savings.mp4" autoplay muted loop></video>
-        <p>I love building calculators—they're the perfect union of user-experience, logic, and math.</p>
-        <p>This calculator had a little secret though... The result could be NEGATIVE.</p>
-        <p>But that was the truth. There were edge cases in which customers would not save money with Allstacks' product. So I brought it to my manager's attention, and we developed a UX for negative results.</p>
+        <p>I love building calculators—they're the perfect union of user experience, logic, and math.</p>
+        <p>But this one had a twist... the result could be NEGATIVE.</p>
+        <p>That was the reality—there were edge cases where customers wouldn't save money with Allstacks' product. I flagged it to my manager, and together, we developed a UX for negative results.</p>
         <img loading="lazy" src="${image_path}projects/allstacks-roi-calc-negative-savings.png" alt="allstacks roi calculator showing negative savings" />
         <p>If the result was negative, the user should be told explicitely that the product was not a fit. Otherwise, they would be scratching their heads, trying to make sense of negative savings.</p>
         <video playsinline webkit-playsinline src="${image_path}allstacks.mp4" autoplay loop muted></video>
-        <p>The edge case was incredibly unlikely, but possible. The resulting calculator captured every possibility, and responded clearly.</p>`
+        <p>The edge cases were rare but possible. The final calculator accounted for every scenario and delivered clear, precise responses.</p>`
     },
     {
         slug: "travel-tech-titans",
@@ -123,7 +122,7 @@ export const WORK = [
     },
     {
         slug: "design-statements",
-        title: 'Design Statements LLC Official',
+        title: 'Design Statements LLC',
         tech: ['WordPress', 'PHP', 'CSS', 'JavaScript', 'UI/UX Design'],
         link: 'http://designstatements-llc.com/',
         image: aws_path + 'designstatements.mp4',
@@ -155,7 +154,7 @@ export const WORK = [
 export const PROJECTS = [
     {
         slug: "expletive",
-        title: '!@#$% Official',
+        title: '!@#$%',
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Keyframe Animations', 'UI/UX Design'],
         link: 'https://expletive.plumbing/',
         image: aws_path + 'expletiveplumbing.mp4',

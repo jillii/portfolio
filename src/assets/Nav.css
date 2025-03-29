@@ -14,7 +14,7 @@ nav ul {
     padding-left: 0;
 }
 nav ul li a {
-    color: initial;
+    color: #111;
     vertical-align: middle;
 }
 
@@ -107,6 +107,9 @@ nav ul li:hover a[href='/']:before {
 @media (prefers-color-scheme: dark) {
     .status {
         border-color: #fff;
+    }
+    nav ul li a {
+        color: #fff;
     }
     nav ul li a[href='/']:before {
         filter: invert(1);
