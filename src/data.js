@@ -195,12 +195,12 @@ export const PROJECTS = [
         link: 'https://jillii.github.io/guess-the-phrase/',
         image: aws_path + 'guessthephrase.mp4',
         body: `<p>I built this app to play in my spare time.</p>
-        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-1.mp4" autoplay loop mutes></video>
+        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-1.mp4" autoplay loop muted></video>
         <p>If you were a '90s kid like me, you probably watched a lot of Wheel of Fortune with your parents. I designed this app to mimic the Wheel of Fortune board, revealing one correctly guessed letter at a time.</p>
         <p>I developed a point system based on the number of letters and how quickly you make a guess. JavaScript handles all the calculations.</p>
-        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-lose.mp4" autoplay loop mutes></video>
+        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-lose.mp4" autoplay loop muted></video>
         <p>I created the app, but I still lose most of the time. However, every once in a while, I get to see the congratulatory animation I built.</p>
-        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-win.mp4" autoplay loop mutes></video>
+        <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-win.mp4" autoplay loop muted></video>
         `
     },
     {
