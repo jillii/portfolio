@@ -80,12 +80,12 @@ export const WORK = [
         <video playsinline webkit-playsinline src="${image_path}projects/companyon-color-change-svgs.mp4" autoplay loop muted></video>
         <p>This design required us to really dig into SVG code. SVGs may look like normal images, but they're actually just code, and can be manipulated as such. We were extending their functionality beyond what either of us knew was possible. It was a valuable learning experience for the whole team.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/companyon-pixel-buttons.mp4" autoplay loop muted></video>
-        <p>I’ve had my share of awful mentors—people who were unavailable and disengaged. My goal was to be the opposite of that.</p>
+        <p>I've had my share of awful mentors—people who were unavailable and disengaged. My goal was to be the opposite of that.</p>
         <img loading="lazy" src="${image_path}projects/companyon-blog-hero.png" alt="companyon blog post hero"/>
         <p>I aimed to inspire and share my excitement for code. I framed all my instructions and advice with “But there could be a better way...” to encourage experimentation.</p>
         <img loading="lazy" src="${image_path}projects/companyon-recent-posts.png" alt="companyon recent posts"/>
         <p>I set a high standard from the start. I held the team to the same level I hold myself.</p>
-        <p>The client loved the final product, and that’s when we truly became a team.</p>`
+        <p>The client loved the final product, and that's when we truly became a team.</p>`
     },
     {
         slug: "allstacks-roi-calculator",
@@ -158,13 +158,13 @@ export const PROJECTS = [
         tech: ['JavaScript', 'CSS', 'Jekyll', 'Liquid', 'Keyframe Animations', 'UI/UX Design'],
         link: 'https://expletive.plumbing/',
         image: aws_path + 'expletiveplumbing.mp4',
-        body: `<p>This is the official website of my IDM projects !@#$%.</p>
+        body: `<p>This is the official website of my IDM (Intelligent Dance Music) projects, titled !@#$%.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/expletive-music.mp4" autoplay loop muted></video>
         <p>The design is a reflection of my sound—sparse, alien, glittery, and cute.</p>
         <p>This site runs the gamut on keyframe animations. It's where I came up with a little trick I wrote about <a href="https://medium.com/@jillii/traveling-through-space-with-pure-css-1b113c58ec1b" target="_blank">here</a>.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/expletive-stars.mp4" autoplay loop muted></video>
-        <p>This site is built using a framework called Jekyll. I chose Jekyll for this site, because there's essentially no database—all data is stored in a YML file. That's why it's so fast :)</p>
-        <p>It utilizes JavaScript for filtering, as well as the media player, which I built from scratch.</p>
+        <p>This site is built with Jekyll, a framework I chose because it doesn't require a database—all data is stored in a YML file. That's why it's so fast :)</p>
+        <p>It utilizes JavaScript for filtering and features a custom-built media player.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/expletive-filter.mp4" autoplay loop muted></video>
         <p>And it's filled with easter eggs.</p>
         <p>Keep those eyes open!</p>
@@ -177,15 +177,15 @@ export const PROJECTS = [
         tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku', 'UI/UX Design'],
         link: 'https://playlistswithfriends.app/',
         image: aws_path + 'playlistswithfriends.mp4',
-        body: `<p>Sometimes you need to create a web app simply because you want it to exist.</p>
+        body: `<p>Sometimes you create a web app simply because you want it to exist.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/playlistswithfriends-home.mp4" autoplay muted loop></video>
-        <p>The internet is full of similar apps, but none that had everything I wanted them to. And they never look good...</p>
-        <p>Playlists With Friends is a web app where users can create playlists by adding tracks to them using the YouTube Search API. Once a playlist is created, its owner can add, remove, reorder, and listen to its tracks.</p>
+        <p>The internet is full of similar apps, but none had everything I wanted—and none looked good.</p>
+        <p>Playlists With Friends is a web app where users can create playlists by adding tracks via the YouTube Search API. Once a playlist is created, the owner can add, remove, reorder, and listen to the tracks.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/playlistswithfriends-addvideo.mp4" autoplay muted loop></video>
-        <p>Playlists also have a special feature where users can invite friends on the site to "collab". This gives the invited user access to add new tracks and tags to the playlist. The user will recieve a notification about the invite, and the playlist will appear in the "Collabs" section on their account page.</p>
+        <p>Playlists also feature a "Collab" option, allowing users to invite friends to contribute. Invited users can add new tracks and tags to the playlist. They'll receive a notification about the invite, and the playlist will appear in the "Collabs" section of their account page.</p>
         <img loading="lazy" src="${image_path}projects/playlistswithfriends-collabs.png" alt="playlists with friends collab section"/>
-        <p>This felt like a Rails site. I've been using Rails to build sites for a long time. It's the first framework I was exposed to as a young web developer back in 2015, and it's still my favorite to this day. Mostly, I've been looking for an excuse to build with it.</p>
-        <p>This site is a work in progress, but slated to be complete by this year. Stay tuned.</p>
+        <p>I knew this had to be a Rails site. I've been using Rails to build sites for years—it's the first framework I encountered as a young web developer back in 2015, and it's still my favorite. Mostly, I've been looking for an excuse to build with it.</p>
+        <p>The site is a work in progress, but it's set to be completed this year. Stay tuned!</p>
         `
     },
     {
@@ -196,10 +196,10 @@ export const PROJECTS = [
         image: aws_path + 'guessthephrase.mp4',
         body: `<p>I built this app to play in my spare time.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-1.mp4" autoplay loop mutes></video>
-        <p>If you were a 90s child like I was, you probably remember watching <i>a lot</i> of Wheel Of Fortune with your parents. I designed this app to behave like the Wheel Of Fortune board—revealing one correctly guessed letter at a time. </p>
-        <p>I developed a point system based on how many letters there are, and how quickly you're able to make a guess. JavaScript handles all the calculations.</p>
+        <p>If you were a '90s kid like me, you probably watched a lot of Wheel of Fortune with your parents. I designed this app to mimic the Wheel of Fortune board, revealing one correctly guessed letter at a time.</p>
+        <p>I developed a point system based on the number of letters and how quickly you make a guess. JavaScript handles all the calculations.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-lose.mp4" autoplay loop mutes></video>
-        <p>I created the app, but I still lose all the time. But every once in a while, I get to see the little congratulatory animation I built...</p>
+        <p>I created the app, but I still lose most of the time. However, every once in a while, I get to see the congratulatory animation I built.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/guessthephrase-win.mp4" autoplay loop mutes></video>
         `
     },
@@ -211,13 +211,13 @@ export const PROJECTS = [
         image: aws_path + 'cakefactory.mp4',
         body: `<p>Cake Factory is a rave-organizing collective dedicated to bringing the raw energy of basement shows to the rave scene.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/cake-factory-nav.mp4" autoplay loop muted></video>
-        <p>I wanted the design of the website to be understated and playful, like the collective.</p>
-        <p>The site was primary informational, until 2020. During COVID all raves and parties came to a screaching halt. But people still wanted to connect, maybe even dance a little in their own homes. So I built out a "Stream" section of the website, complete with a live sream, as well as a live chat with little heart + cake reacts.</p>
+        <p>I wanted the website design to be understated yet playful, like the collective.</p>
+        <p>The site was primarily informational until 2020. When COVID caused raves and parties to come to a screeching halt, people still wanted to connect—maybe even dance a little in their own homes. So, I added a "Stream" section to the site, featuring a live stream and a live chat with heart and cake reactions.</p>
         <img loading="lazy" src="${image_path}projects/cake-factory-stream.png" alt="w00dy performing cake factory internet edition" />
-        <p>Cake Factory continued shows through COVID.</p>
+        <p>Cake Factory continued to host shows through COVID.</p>
         <video playsinline webkit-playsinline src="${image_path}projects/cake-factory-ambient.mp4" autoplay loop muted></video>
-        <p>Technology often makes us feel alienated from one another, but in this case—it was just the opposite.</p>
-        <p>It was hardly a substitute for an actual show, but at least it brought the community back together. And everyone had a front row seat, and could communicate without having to yell over the din :).</p>
+        <p>Technology often makes us feel alienated, but in this case it connected people.</p>
+        <p>It wasn't a perfect substitute for an actual show, but it brought the community back together. Everyone had a front-row seat and could communicate without having to yell over the noise :)</p>
 
         `
     }
