@@ -6,17 +6,17 @@ import Status from './Status'
 
 export default function () {
   const trigger = document.getElementById('trigger')
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState('')
 
   const removeActive = () => {
     setIsActive('')
   }
 
   const toggleActive = () => {
-    if (isActive) {
-      setIsActive(false)
+    if (isActive === 'active') {
+      setIsActive('')
     } else {
-      setIsActive(true)
+      setIsActive('active')
     }
   }
 
@@ -26,7 +26,7 @@ export default function () {
         <ul>
           <li><Link onClick={removeActive} to="/"></Link></li>
           <Status />
-          <button id="trigger" className={`mobile-trigger${isActive ? ' active' : ''}`} onClick={toggleActive}></button>
+          <button id="trigger" className={`mobile-trigger ${isActive}`} onClick={toggleActive}></button>
           <span className='mobile-menu'>
             <div className='drawer'>
               <li><Link onClick={removeActive} to="/about/">About</Link></li>

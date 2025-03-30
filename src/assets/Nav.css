@@ -68,6 +68,7 @@ nav ul li:hover a[href='/']:before {
 
 .status {
     position: relative;
+    min-width: 166px;
     border: 1px solid;
     border-radius: 22px;
     padding: 4px 28px;
@@ -109,7 +110,7 @@ nav ul li:hover a[href='/']:before {
     gap: 12px;
     align-items: center;
     margin: 0;
-    padding: 0 21px;
+    padding: 0 28px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -129,7 +130,7 @@ nav ul li:hover a[href='/']:before {
 
 @media (max-width: 768px) {
     .status {
-        padding: 4px 33px;
+        padding: 4px 18px;
     }
     .status-text:after {
         content: attr(data-mobile);
@@ -175,12 +176,11 @@ nav ul li:hover a[href='/']:before {
         width: 100%;
         margin-top: -100%;
         z-index: -1;
-        transition: margin-top .25s linear;
     }
-
+    
     nav .mobile-trigger.active + .mobile-menu .drawer {
-        margin-top: 0;
         z-index: 1;
+        animation: rollOut .25s linear forwards;
     }
 
     nav .mobile-menu li {
@@ -236,5 +236,23 @@ nav ul li:hover a[href='/']:before {
     to {
         bottom: calc(100% + 25px);
     }
+}
+
+@keyframes rollOut {
+    from {
+        margin-top: -100%;
+    }
+
+    to {
+        margin-top: 0;
+    }
+}
+@keyframes rollUp {
+    from {
+        margin-top: 0;
+    }
     
+    to {
+        margin-top: -100%;
+    }
 }
