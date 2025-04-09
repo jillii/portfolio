@@ -11,7 +11,7 @@ export const ABOUT = {
         "The first language I learned to program with was Java. The second was C.",
         "While my professional work focuses heavily towards frontend, my background in object-oriented / low-level programming and continuous stream of backend-heavy side projects allows my to bridge the two worlds.",
         "I have built award-winning websites for large agencies, and helped small companies grow with a polished, high-performing websites.",
-        "I lived through the dawn of the internet, and it captures my imagination to this day",
+        "I lived through the dawn of the internet, and it captures my imagination to this day.",
         "Web development is an art, and it's my favorite kind."
     ]
 }
