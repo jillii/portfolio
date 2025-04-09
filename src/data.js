@@ -7,9 +7,16 @@ export const ABOUT = {
     summary: "Web development as ",
     list: ['art.', 'connection.', 'play.', 'inspiration.', 'expression.'],
     bio: [
+<<<<<<< HEAD
         "I'm Jill—Web engineer. 10 years agency experience.",
         "My journey started with Java, followed by C, and has led to a career focused on frontend. But my background in object-oriented/low-level programming and steady stream of backend-heavy side projects allows me to bridge the two worlds.",
         "I've built award-winning websites for major agencies and helped SMEs grow with polished, high-performance sites.",
+=======
+        "I'm Jill—web engineer for 9+ years.",
+        "The first language I learned to program with was Java. The second was C.",
+        "While my professional work focuses heavily towards frontend, my background in object-oriented / low-level programming and continuous stream of backend-heavy side projects allows my to bridge the two worlds.",
+        "I have built award-winning websites for large agencies, and helped small companies grow with a polished, high-performing websites.",
+>>>>>>> ddc75342cc1fa5d0857ef22f17e88f4067cc2c1a
         "I lived through the dawn of the internet, and it captures my imagination to this day.",
         "Web development is an art, and it's my favorite kind."
     ]
