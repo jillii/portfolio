@@ -36,26 +36,8 @@
     transition: filter .2s;
 }
 
-.card:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #11111170;
-    opacity: 0;
-    will-change: opacity;
-    transition: opacity .2s;
-    z-index: 1;
-}
-
 .card:hover :is(img, video) {
-    filter: blur(4px);
-}
-
-.card:hover:after {
-    opacity: 1;
+    filter: blur(4px) brightness(.5);
 }
 
 .card:hover .card-data {

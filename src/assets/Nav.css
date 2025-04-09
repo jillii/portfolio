@@ -192,6 +192,11 @@ nav ul li:hover a[href='/']:before {
         width: 100%;
         padding: 12px 21px;
         box-sizing: border-box;
+        transition: background-color .25s, color .25s;
+    }
+    nav .mobile-menu li a:hover {
+        background-color: #646cff7d;
+        color: #fff;
     }
 }
 

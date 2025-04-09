@@ -10,7 +10,7 @@ export const ABOUT = {
         "I'm Jill—Web engineer. 10 years agency experience.",
         "My journey started with Java, followed by C, and has led to a career focused on frontend. But my background in object-oriented/low-level programming and steady stream of backend-heavy side projects allows me to bridge the two worlds.",
         "I've built award-winning websites for major agencies and helped SMEs grow with polished, high-performance sites.",
-        "I lived through the dawn of the internet, and it captures my imagination to this day",
+        "I lived through the dawn of the internet, and it captures my imagination to this day.",
         "Web development is an art, and it's my favorite kind."
     ]
 }
@@ -29,7 +29,7 @@ export const WORK = [
         title: "Quorum Federal Credit Union",
         tech: ['PHP', 'SCSS', 'JavaScript', 'WordPress', 'SEO'],
         link: 'https://www.quorumfcu.org/',
-        image: image_path + 'quorum-homepage.png',
+        image: image_path + 'quorum.png',
         body: `<p>QFCU aimed to adopt a younger, more modern tone, which required a full overhaul. I took the opportunity to enhance the site's backend architecture for improved functionality and scalability.</p>
         <img loading="lazy" src="${aws_path}projects/quorum-term-savings-hero.png" alt="quorum term savings hero" />
         <p>My goal was to streamline user experience—turn repetitive, manual data entry into seamless automations. Previously, populating the Rates page involved uploading an XML file with all the rates to the backend. This process was clunky and overly complicated—just updating a single rate required generating a new XML. To solve this, I created a custom data type for rates, allowing them to be updated directly in the dashboard.</p>
