@@ -9,7 +9,7 @@ export const ABOUT = {
     bio: 
     [
         "I'm Jill—Web engineer. 10 years agency experience.",
-        "I'm a Boston-based fullstack engineer, with a giant passion and focus on frontend.",
+        "Boston-based fullstack engineer, with a giant passion and focus on frontend.",
         "I've built award-winning websites for major agencies and helped SMEs grow with polished, high-performance sites.",
 
         "I lived through the dawn of the internet, and it captures my imagination to this day.",
