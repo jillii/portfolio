@@ -14,8 +14,8 @@ function Home() {
     }
     
     useEffect(() => {
-        const intervalID = setInterval(getNext, 2500);
-        return () => clearInterval(intervalID);
+        const intervalID = setInterval(getNext, 2500)
+        return () => clearInterval(intervalID)
     }, [getNext])
 
     return (
