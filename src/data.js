@@ -226,7 +226,7 @@ export const PROJECTS = [
 ]
 
 export const BUSINESSES = {
-    title: "Invest In Your Digital Brand",
+    title: "Invest In<br><span class='star-burst'>Your Digital Brand</span>",
     subtitle: "",
     paragraphs: [
         {

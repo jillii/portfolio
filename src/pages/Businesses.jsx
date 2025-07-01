@@ -8,7 +8,7 @@ function Businesses() {
         <>
             <section>
                 <div className="site-container">
-                    { BUSINESSES.title && <h1>{BUSINESSES.title}</h1> }
+                    { BUSINESSES.title && <h1><ReactMarkdown rehypePlugins={[rehypeRaw]}>{BUSINESSES.title}</ReactMarkdown></h1> }
                     { BUSINESSES.subtitle && <p>{BUSINESSES.subtitle}</p> }
                     { BUSINESSES.paragraphs && BUSINESSES.paragraphs.map((item, index) => {
                         return (

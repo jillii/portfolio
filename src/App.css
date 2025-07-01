@@ -47,6 +47,11 @@ label {
   letter-spacing: 1.4px;
 }
 
+.star-burst:after {
+  content: url(../public/assets/dashes.svg);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
 @media (max-width: 768px) {
   section {
     margin: 67px 0
