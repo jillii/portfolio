@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import Businesses from './pages/Businesses'
 import { WORK, PROJECTS } from './data'
 import Project from './pages/Project'
 import ScrollToTop from './components/ScrollToTop.js'
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about/" element={<About />}></Route>
+          <Route path="/businesses/" element={<Businesses />}></Route>
           {WORK.map((item, index) => {
             return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
           })}

@@ -128,7 +128,7 @@ nav ul li:hover a[href='/']:before {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .status {
         padding: 4px 18px;
     }
@@ -151,7 +151,7 @@ nav ul li:hover a[href='/']:before {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
     nav {
         background-color: #fff;
     }

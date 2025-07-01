@@ -7,10 +7,6 @@
     max-width: 900px;
 }
 
-.about .copy-area .headline {
-    margin-top: 0;
-}
-
 .tech {
     flex-wrap: wrap;
 }

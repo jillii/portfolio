@@ -224,3 +224,22 @@ export const PROJECTS = [
         `
     }
 ]
+
+export const BUSINESSES = {
+    title: "Invest In Your Digital Brand",
+    subtitle: "",
+    paragraphs: [
+        {
+            headline: "You Owe It To Your Business.",
+            body: "You have an amazing product, amazing team, amazing mission. Your website should reflect that. Don't sell yourself short."
+        },
+        {
+            headline: "It's 2025. Your Website Is Your Storefront.",
+            body: "For a lot of folks, this will be the first exposure they get to your business. A polished UI will earn users' trust, and seamless UX will keep them engaged. Make a good impression."
+        },
+        {
+            headline: "A Human-Being At Your Service.",
+            body: "A website-builder might be able to get you halfway there, but only a human can fully realize your vision. Let's find a way to make your business's website beautiful, easy to maintain, and tailor-made to fit your needs. <a href='mailto:hello@jill.digital'>Let's get started.</a>"
+        }
+    ]
+}

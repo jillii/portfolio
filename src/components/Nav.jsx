@@ -28,6 +28,7 @@ export default function () {
           <button id="trigger" className={`mobile-trigger${isActive ? ' active' : ''}`} onClick={toggleActive}></button>
           <span className='mobile-menu'>
             <div className='drawer'>
+              <li><Link onClick={removeActive} to="/businesses/">For Businesses</Link></li>
               <li><Link onClick={removeActive} to="/about/">About</Link></li>
               <li><Anchor onClick={removeActive} to="#contact">Contact</Anchor></li>
               <li><a onClick={removeActive} href='https://jillii.github.io/resume/' target='_blank'>CV</a></li>
