@@ -1,6 +1,7 @@
 .about {
-    gap: 20%;
+    gap: max(20%, 33px);
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .about .copy-area {
