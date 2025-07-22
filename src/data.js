@@ -178,12 +178,12 @@ export const PROJECTS = [
         title: 'Playlists With Friends (WIP)',
         tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku', 'UI/UX Design'],
         link: 'https://playlistswithfriends.app/',
-        image: aws_path + 'playlistswithfriends.mp4',
+        image: aws_path + 'playlistswithfriends-slider-mobile.mp4',
         body: `<p>Sometimes you create a web app simply because you want it to exist.</p>
-        <video playsinline webkit-playsinline src="${aws_path}projects/playlistswithfriends-home.mp4" autoplay muted loop></video>
+        <video playsinline webkit-playsinline src="${aws_path}projects/playlistswithfriends-playlist-slider.mp4" autoplay muted loop></video>
         <p>The internet is full of similar apps, but none had everything I wanted—and none looked good.</p>
         <p>Playlists With Friends is a web app where users can create playlists by adding tracks via the YouTube Search API. Once a playlist is created, the owner can add, remove, reorder, and listen to the tracks.</p>
-        <video playsinline webkit-playsinline src="${aws_path}projects/playlistswithfriends-addvideo.mp4" autoplay muted loop></video>
+        <video playsinline webkit-playsinline src="${aws_path}projects/playlistswithfriends-youtube-search.mp4" autoplay muted loop></video>
         <p>Playlists also feature a "Collab" option, allowing users to invite friends to contribute. Invited users can add new tracks and tags to the playlist. They'll receive a notification about the invite, and the playlist will appear in the "Collabs" section of their account page.</p>
         <img loading="lazy" src="${aws_path}projects/playlistswithfriends-collabs.png" alt="playlists with friends collab section"/>
         <p>I knew this had to be a Rails site. I've been using Rails to build sites for years—it's the first framework I encountered as a young web developer back in 2015, and it's still my favorite. Mostly, I've been looking for an excuse to build with it.</p>
