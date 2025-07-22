@@ -175,7 +175,7 @@ export const PROJECTS = [
     },
     {
         slug: "playlists-with-friends",
-        title: 'Playlists With Friends (WIP)',
+        title: 'Playlists With Friends',
         tech: ['JavaScript', 'Ruby', 'Rails', 'CSS', 'APIs', 'Turbo', 'Dokku', 'UI/UX Design'],
         link: 'https://playlistswithfriends.app/',
         image: aws_path + 'playlistswithfriends-slider-mobile.mp4',
