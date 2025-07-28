@@ -52,6 +52,36 @@ label {
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
+.glass-container {
+	position: relative;
+  padding: 0;
+  text-shadow: 1px 1px white;
+  font-weight: 800;
+}
+.glass {
+    border-radius: 13px;
+    padding: 18px 28px;
+    backdrop-filter: blur(3px) brightness(1.1);
+    & + .glass-border,
+    & + .glass-border + .glass-edge {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: inherit;
+    }
+    & + .glass-border {
+        backdrop-filter: blur(5px);
+        clip-path: polygon(0% 0%, 0% 100%, 10px 100%, 10px 10px, calc(100% - 10px) 10px, calc(100% - 10px) calc(100% - 10px), 10px calc(100% - 10px), 10px 100%, 100% 100%, 100% 0%);
+        & + .glass-edge {
+            backdrop-filter: blur(10px);
+            clip-path: polygon(0% 0%, 0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%);
+        }
+    }
+}
+
+
 @media (max-width: 768px) {
   section {
     margin: 67px 0

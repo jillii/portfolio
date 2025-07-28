@@ -10,8 +10,12 @@ export default function Section (props) {
 
     return (
         <section className="card-section">
-            <div className="site-container section-head">
-                <h2>{title}</h2>
+            <div className='site-container section-head glass-container'>
+                <div className=" glass">
+                    <h2>{title}</h2>
+                </div>
+                <div className='glass-border'></div>
+                <div className='glass-edge'></div>
             </div>
             <div className="card-container">
                 {list.map((item, index) => {
