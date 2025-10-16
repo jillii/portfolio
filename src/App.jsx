@@ -8,6 +8,7 @@ import About from './pages/About'
 import Businesses from './pages/Businesses'
 import { WORK, PROJECTS } from './data'
 import Project from './pages/Project'
+import ModeToggle from './components/ModeToggle.jsx'
 import ScrollToTop from './components/ScrollToTop.js'
 import { Analytics } from "@vercel/analytics/react"
 
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Nav />
+        <ModeToggle />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about/" element={<About />}></Route>

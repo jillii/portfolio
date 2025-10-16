@@ -26,7 +26,7 @@ footer .flexbox {
     animation: dropshadow .25s forwards ease;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
     footer {
         background-color: #2e2e2e;
     }

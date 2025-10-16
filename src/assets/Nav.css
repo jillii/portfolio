@@ -1,3 +1,28 @@
+.theme-toggle {
+    padding: 0.5em;
+    width: 110px;
+    flex-shrink: 0;
+    border-radius: 33px;
+    border: 2px solid;
+    transition: border-color .2s;
+}
+.theme-toggle:focus {
+    outline: none;
+}
+.theme-toggle:after {
+    content: '';
+    display: block;
+    height: 33px;
+    width: 33px;
+    background-color: #7e7e7e;
+    border-radius: 50%;
+    transition: margin-left .25s ease-in-out, transform .25s ease-in-out;
+}
+.theme-toggle.active:after {
+    margin-left: 100%;
+    transform: translateX(-100%)
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -218,7 +243,13 @@ nav ul li:hover a[href='/']:before {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="light"] {
+    .status {
+        background-color: #111;
+    }
+}
+
+[data-theme="dark"]  {
     .status {
         border-color: #fff;
     }
