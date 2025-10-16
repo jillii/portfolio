@@ -1,9 +1,10 @@
 import {ABOUT, WORK, PROJECTS} from '../data'
 import Section from '../components/Section'
+import ModeToggle from '../components/ModeToggle';
 import '../assets/Home.css'
 import React, { useState, useEffect } from 'react';
 
-function Home() {
+function Home(props) {
     const webDevAs = ABOUT.list
     const [text, setText] = useState(webDevAs[0])
     const [index, setIndex] = useState(1)
@@ -20,6 +21,7 @@ function Home() {
 
     return (
         <>
+            <ModeToggle  theme={props.theme} handleThemeToggle={props.handleThemeToggle} />
             <section>
                 <div className="site-container">
                     <h1 className="bio site-title">{ABOUT.summary} <span key={index} id="as-text" className="as-text">{text}</span></h1>
