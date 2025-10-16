@@ -253,6 +253,7 @@ nav ul li:hover a[href='/']:before {
     .status {
         border-color: #fff;
     }
+    .mobile-trigger,
     nav ul li a {
         color: #fff;
     }
