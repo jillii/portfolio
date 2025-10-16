@@ -20,28 +20,47 @@ nav ul li a {
 
 nav .mobile-menu, nav .mobile-menu .drawer {
     display: inherit;
-    gap: inherit
+    gap: inherit;
 }
 
 nav .mobile-trigger {
     display: none;
     appearance: none;
-    align-self: center;
     padding: 0;
     background-color: transparent;
     border: none;
     border-radius: 0;
     outline: none;
-    mask-image: url(/assets/bars-solid.svg);
+    transition: transform .2s linear;
+}
+nav .mobile-trigger:before,
+nav .mobile-trigger:after {
+    content: '';
+    display: flex;
+    mask-repeat: no-repeat;
+    mask-position: center;
     background-color: currentColor;
-    mask-size: contain;
     height: 21px;
     width: 21px;
     transition: background-color .25s;
 }
+nav .mobile-trigger:before {
+    mask-image: url(/assets/bars-solid.svg);
+}
+nav .mobile-trigger:after {
+    mask-image: url(/assets/close.svg);
+}
 
-nav .mobile-trigger.active {
-    background-color: #646cff;
+.trigger-wrapper {
+    display: flex;
+    align-self: center;
+    height: 21px;
+    width: 21px;
+    overflow: hidden;
+}
+
+.trigger-wrapper.active .mobile-trigger {
+    transform: translateY(-100%);
 }
 
 nav a:focus {
@@ -175,12 +194,11 @@ nav ul li:hover a[href='/']:before {
         gap: 0;
         width: 100%;
         margin-top: -100%;
-        z-index: -1;
+        transition: margin-top .2s linear;
     }
     
-    nav .mobile-trigger.active + .mobile-menu .drawer {
-        z-index: 1;
-        animation: rollOut .25s linear forwards;
+    nav .trigger-wrapper.active + .mobile-menu .drawer {
+        margin-top: 0;
     }
 
     nav .mobile-menu li {
@@ -215,7 +233,7 @@ nav ul li:hover a[href='/']:before {
         color: #fff;
     }
 
-    @media (max-width: 560px) {
+    @media (max-width: 768px) {
         nav,
         nav .mobile-menu {
             background-color: #111;
@@ -245,19 +263,10 @@ nav ul li:hover a[href='/']:before {
 
 @keyframes rollOut {
     from {
-        margin-top: -100%;
+        transform: translateY(-100%);
     }
 
     to {
-        margin-top: 0;
-    }
-}
-@keyframes rollUp {
-    from {
-        margin-top: 0;
-    }
-    
-    to {
-        margin-top: -100%;
+        transform: translateY(0);
     }
 }

@@ -25,7 +25,9 @@ export default function () {
         <ul>
           <li><Link onClick={removeActive} to="/"></Link></li>
           <Status />
-          <button id="trigger" className={`mobile-trigger${isActive ? ' active' : ''}`} onClick={toggleActive}></button>
+          <div className={`trigger-wrapper${isActive ? ' active' : ''}`}>
+            <button id="trigger" className='mobile-trigger' onClick={toggleActive}></button>
+          </div>
           <span className='mobile-menu'>
             <div className='drawer'>
               <li><Link onClick={removeActive} to="/businesses/">For Businesses</Link></li>
