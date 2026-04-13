@@ -63,11 +63,3 @@
         margin-bottom: 0;
     }
 }
-
-
-[data-theme="dark"]  {
-    .section-head {
-        background-color: #11111167;
-    }
-  }
-  
