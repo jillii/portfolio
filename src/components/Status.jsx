@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 
 export default function Status () {
-    const desktop = "Available for new opportunities"
-    const mobile = "Available"
+    const desktop = "Some availability"
+    const mobile = "Some availability"
     const hover = "hello@jill.digital"
     const [copiedMsg, setCopiedMsg] = useState('')
     

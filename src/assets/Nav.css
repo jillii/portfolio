@@ -141,7 +141,7 @@ nav ul li:hover a[href='/']:before {
     margin-right: 21px;    
     width: 10px;
     height: 10px;
-    background-color: #3dff81;
+    background-color: rgb(255, 184, 61);
     border-radius: 50%;
     vertical-align: middle;
     animation: flashing 1s alternate-reverse infinite;
@@ -276,10 +276,10 @@ nav ul li:hover a[href='/']:before {
 
 @keyframes flashing {
     from {
-        box-shadow: 0 0 22px #3dff81;
+        box-shadow: 0 0 22px rgb(255, 184, 61);
     }    
     to {
-        box-shadow: 0 0 4px #3dff81;
+        box-shadow: 0 0 4px rgba(255, 184, 61);
     }
 }
 
