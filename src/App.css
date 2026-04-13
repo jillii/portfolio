@@ -59,7 +59,7 @@ label {
   transition: color .2s ease;
 }
 .glass-container.is-sticky {
-  color: #646cff;
+  color: #111;
 }
 .glass-container.is-sticky h2 {
   font-weight: 600;
