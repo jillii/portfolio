@@ -8,7 +8,7 @@ export default function Footer () {
             <div className="site-container">
                 <h2 className="footer-cta">Let me know how I can help you. <a href='mailto:hello@jill.digital'>Let's connect.</a></h2>
                 <div className='flexbox'>
-                    <p>©2025 Jill Hoenig</p>
+                    <p>©2026 Jill Hoenig</p>
                     {CONTACT.socials &&
                         <div className='socials'>
                             {CONTACT.socials.map((social, index) => <Social key={index} url={social} />)}
