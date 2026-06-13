@@ -58,12 +58,7 @@ label {
   font-weight: 800;
   transition: color .2s ease;
 }
-.glass-container.is-sticky {
-  color: #111;
-}
-.glass-container.is-sticky h2 {
-  font-weight: 600;
-}
+
 .glass {
     border-radius: 13px;
     padding: 18px 28px;
