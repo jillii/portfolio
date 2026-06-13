@@ -31,11 +31,13 @@ export default function Section (props) {
                 <div className='glass-border'></div>
                 <div className='glass-edge'></div>
             </div>
-            <div className="card-container">
-                {list.map((item, index) => {
-                    {item.tech.map((tech) => filterTech.indexOf(tech) === -1 ? filterTech.push(tech) : '')}
-                    return (<Card key={index} slug={item.slug} title={item.title} tech={item.tech} body={item.body} image={item.image} overlay={item.overlay} />)
-                })}
+            <div className="card-container site-container">
+                <div class="card-track">
+                    {list.map((item, index) => {
+                        {item.tech.map((tech) => filterTech.indexOf(tech) === -1 ? filterTech.push(tech) : '')}
+                        return (<Card key={index} slug={item.slug} title={item.title} tech={item.tech} body={item.body} image={item.image} overlay={item.overlay} />)
+                    })}
+                </div>
             </div>
             <div className='site-container'>
                 <label>Filter by language / technology:</label>
