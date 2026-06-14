@@ -6,9 +6,7 @@
     border: 2px solid;
     transition: border-color .2s;
 }
-.theme-toggle:focus {
-    outline: none;
-}
+
 .theme-toggle:after {
     content: '';
     display: block;
@@ -56,7 +54,6 @@ nav .mobile-trigger {
     background-color: transparent;
     border: none;
     border-radius: 0;
-    outline: none;
     transition: transform .2s linear;
 }
 nav .mobile-trigger:before,
@@ -87,10 +84,6 @@ nav .mobile-trigger:after {
 
 .trigger-wrapper.active .mobile-trigger {
     transform: translateY(-100%);
-}
-
-nav a:focus {
-    outline: none;
 }
 
 nav ul li:has(a[href='/']) {

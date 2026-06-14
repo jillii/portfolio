@@ -16,6 +16,7 @@ export default function () {
   const breakpoint = 768
   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint)
   const navRef = useRef()
+  const toggleRef = useRef()
   const location = useLocation()
 
   const toggleActive = () => {
@@ -29,6 +30,53 @@ export default function () {
     }, 200),
   [])
 
+  const handleKeyboardNavigation = (e) => {
+    if (!isMobile) return
+
+    if (e.key === 'Escape') {
+      setIsActive(false) // close nav
+      toggleRef.current.focus() // move focus back to toggle
+      return
+    }
+    const focusable = getFocusableItems(navRef.current.querySelector('.drawer'))
+    const isLast = e.target === focusable[focusable.length - 1]
+    const isFirst = e.target === focusable[0]
+    const index = [...focusable].indexOf(e.target)
+ 
+    if (e.key === 'Tab' && e.shiftKey) {
+      if (isFirst) {
+        e.preventDefault()
+        toggleRef.current.focus() // move focus back to toggle
+        setIsActive(false)
+      }
+    }
+    if (e.key === 'Tab' && !e.shiftKey) {
+      if (isLast) {
+        setIsActive(false)
+      }
+    }
+    if (e.key === 'ArrowDown') {
+      e.preventDefault()
+      if (isLast) {
+        focusable[0].focus()
+      } else {
+        focusable[index + 1].focus()
+      }
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault()
+      if (isFirst) {
+        focusable[focusable.length - 1].focus()
+      } else {
+        focusable[index - 1].focus()
+      }
+    }
+  }
+
+  const getFocusableItems = (el) => {
+    return el.querySelectorAll('a, button')
+  }
+
   useEffect(() => {
     window.addEventListener('resize', handleResize)
     return () => {
@@ -39,6 +87,16 @@ export default function () {
   useEffect(() => {
     setIsActive(false)
   }, [location])
+
+  useEffect(() => {
+    const nav = navRef.current
+    nav.addEventListener('keydown', handleKeyboardNavigation)
+    return () => nav.removeEventListener('keydown', handleKeyboardNavigation)
+  }, [])
+
+  useEffect(() => {
+    navRef.current.querySelector('.drawer').inert = isMobile && !isActive // Set drawer to inert = true on mobile when nav closed, false on desktop 
+  }, [isMobile, isActive])
 
   useGSAP(() => {
     let mm = gsap.matchMedia();
@@ -85,7 +143,7 @@ export default function () {
           <li><Link to="/"></Link></li>
           <Status />
           <div className={`trigger-wrapper${isActive ? ' active' : ''}`}>
-            <button id="trigger" className='mobile-trigger' onClick={toggleActive}></button>
+            <button ref={toggleRef} id="trigger" className='mobile-trigger' onClick={toggleActive}></button>
           </div>
           <span className='mobile-menu'>
             <div className='drawer'>

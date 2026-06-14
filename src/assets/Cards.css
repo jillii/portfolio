@@ -91,6 +91,8 @@
 }
 .card-tech-filter .filter {
     position: relative;
+    background-color: transparent;
+    font-weight: 400;
     cursor: pointer;
     overflow: hidden;
     transition: background-color .25s, color .25s;

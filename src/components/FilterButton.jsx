@@ -1,4 +1,5 @@
 import classNames from "classnames"
+import { useRef } from 'react'
 
 export default function Button(props) {
     const initial = props.initial
@@ -7,6 +8,7 @@ export default function Button(props) {
     const tech = props.tech
     const active = props.active
     const setActive = props.setActive
+    const btnRef = useRef()
 
     const activeClass = classNames({
         'active': active && active.indexOf(tech) !== -1
@@ -15,8 +17,11 @@ export default function Button(props) {
     const handleFilter = () => {
         let newList = []
         if (tech === 'Reset') {
+            const btn = btnRef.current
             setActive([])
             newList = initial
+            btn.closest('.card-tech-filter').querySelector('button').focus() // Return focus to first button
+
         } else {
             let newActive = [...active, tech]
             setActive(newActive)
@@ -29,9 +34,7 @@ export default function Button(props) {
         setList(newList)
     }
 
-
-
     return (
-        <li className={`tech-pill filter ${activeClass}`} onClick={handleFilter}>{tech}</li>
+        <li><button ref={btnRef} className={`tech-pill filter ${activeClass}${tech === 'Reset' ? ' isReset' : ''}`} onClick={handleFilter}>{tech}</button></li>
     )
 }
