@@ -1,5 +1,5 @@
 import '../assets/Nav.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { HashLink as Anchor } from 'react-router-hash-link'
 import { useState, useRef, useEffect, useMemo } from 'react'
 import Status from './Status'
@@ -16,6 +16,7 @@ export default function () {
   const breakpoint = 768
   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint)
   const navRef = useRef()
+  const location = useLocation()
 
   const toggleActive = () => {
     setIsActive(!isActive)
@@ -34,6 +35,10 @@ export default function () {
       window.removeEventListener('resize', handleResize)
     }
   }, [handleResize])
+
+  useEffect(() => {
+    setIsActive(false)
+  }, [location])
 
   useGSAP(() => {
     let mm = gsap.matchMedia();
