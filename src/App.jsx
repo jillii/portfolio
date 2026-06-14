@@ -30,19 +30,21 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Nav />
-        <Routes>
-          <Route path="/" element={<Home theme={theme} handleThemeToggle={handleThemeToggle} />}></Route>
-          <Route path="/about/" element={<About />}></Route>
-          <Route path="/businesses/" element={<Businesses />}></Route>
-          {WORK.map((item, index) => {
-            return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
-          })}
-          {PROJECTS.map((item, index) => {
-            return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
-          })}
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+        <div className='page'>
+          <Routes>
+            <Route path="/" element={<Home theme={theme} handleThemeToggle={handleThemeToggle} />}></Route>
+            <Route path="/about/" element={<About />}></Route>
+            <Route path="/businesses/" element={<Businesses />}></Route>
+            {WORK.map((item, index) => {
+              return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
+            })}
+            {PROJECTS.map((item, index) => {
+              return <Route key={index} path={`/project/${item.slug}/`} element={<Project title={item.title} tech={item.tech} body={item.body} />}></Route>
+            })}
+          </Routes>
+        </div>
+        </BrowserRouter>
+        <Footer />
     </>
   )
 }

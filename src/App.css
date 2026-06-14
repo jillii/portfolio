@@ -1,9 +1,11 @@
 #root {
   min-height: calc(80dvh);
   width: 100%;
-  margin-top: 20dvh;
   display: flex;
   flex-direction: column;
+}
+.page {
+  margin-top: 20dvh;
 }
 html {
   scroll-behavior: smooth;

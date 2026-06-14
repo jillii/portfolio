@@ -24,12 +24,13 @@
 }
 
 nav {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 1rem;
     width: 100%;
     box-sizing: border-box;
     z-index: 999;
 }
+
 nav ul {
     display: flex;
     gap: 24px;
@@ -196,7 +197,13 @@ nav ul li:hover a[href='/']:before {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
     nav {
+        top: 0;
         background-color: #fff;
     }
     nav ul {
