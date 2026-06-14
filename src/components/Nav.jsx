@@ -17,16 +17,8 @@ export default function () {
   const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint)
   const navRef = useRef()
 
-  const removeActive = () => {
-    setIsActive(false)
-  }
-
   const toggleActive = () => {
-    if (isActive) {
-      setIsActive(false)
-    } else {
-      setIsActive(true)
-    }
+    setIsActive(!isActive)
   }
 
   // Track when window is < 768
@@ -85,17 +77,17 @@ export default function () {
     <nav className='nav'>
       <div className={`site-container${isScrolled && !isMobile ? ' glass-container' : ''}`}>
         <ul className={`nav-list${isScrolled && !isMobile ? ' glass' : ''}`}>
-          <li><Link onClick={removeActive} to="/"></Link></li>
+          <li><Link to="/"></Link></li>
           <Status />
           <div className={`trigger-wrapper${isActive ? ' active' : ''}`}>
             <button id="trigger" className='mobile-trigger' onClick={toggleActive}></button>
           </div>
           <span className='mobile-menu'>
             <div className='drawer'>
-              <li><Link onClick={removeActive} to="/businesses/">For Businesses</Link></li>
-              <li><Link onClick={removeActive} to="/about/">About</Link></li>
-              <li><Anchor onClick={removeActive} to="#contact">Contact</Anchor></li>
-              <li><a onClick={removeActive} href='https://jillii.github.io/resume/' target='_blank'>CV</a></li>
+              <li><Link onClick={toggleActive} to="/businesses/">For Businesses</Link></li>
+              <li><Link onClick={toggleActive} to="/about/">About</Link></li>
+              <li><Anchor onClick={toggleActive} to="#contact">Contact</Anchor></li>
+              <li><a onClick={toggleActive} href='https://jillii.github.io/resume/' target='_blank'>CV</a></li>
             </div>
           </span>
         </ul>
