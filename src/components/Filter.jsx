@@ -1,5 +1,5 @@
 import Button from "./FilterButton"
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 
 export default function Filter(props) {
     const list = props.list
