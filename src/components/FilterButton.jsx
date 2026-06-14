@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function Button(props) {
     const initial = props.initial
@@ -33,6 +33,21 @@ export default function Button(props) {
         }
         setList(newList)
     }
+
+    const handleKeyboardNavigation = (e) => {
+        if (e.key === 'Escape') {
+            const btn = btnRef.current
+            setActive([])
+            setList(initial)
+            btn.closest('.card-tech-filter').querySelector('button').focus() // Return focus to first button
+        }
+    }
+
+    useEffect(() => {
+        const btn = btnRef.current
+        btn.addEventListener('keydown', handleKeyboardNavigation)
+        return () => btn.removeEventListener('keydown', handleKeyboardNavigation)
+    }, [])
 
     return (
         <li><button ref={btnRef} className={`tech-pill filter ${activeClass}${tech === 'Reset' ? ' isReset' : ''}`} onClick={handleFilter}>{tech}</button></li>
