@@ -148,3 +148,17 @@
         margin-right: -150px;
     }
 }
+
+[data-theme="dark"] {
+    .card-tech-filter .filter {
+        border-color: #fff;
+        color: #fff;
+    }
+}
+
+[data-theme="light"] {
+    .card-tech-filter .filter {
+        border-color: #111;
+        color: #111;
+    }
+}
