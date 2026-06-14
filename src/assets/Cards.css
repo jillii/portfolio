@@ -34,9 +34,11 @@
     transition: margin-right .2s, transform .5s .1s;
 }
 
-.card-container .card:hover {
-    margin-right: 0;
-    transform: none;
+@media (hover: hover) {
+    .card-container .card:hover {
+        margin-right: 0;
+        transform: none;
+    }
 }
 
 .card-data {
@@ -61,13 +63,15 @@
     transition: filter .2s;
 }
 
-.card:hover :is(img, video) {
-    filter: blur(4px) brightness(.5);
+@media (hover: hover) {
+    .card:hover :is(img, video) {
+        filter: blur(4px) brightness(.5);
+    }
+    .card:hover .card-data {
+        opacity: 1;
+    }
 }
 
-.card:hover .card-data {
-    opacity: 1;
-}
 .card-tech {
     display: flex;
     flex-wrap: wrap;
