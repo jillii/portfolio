@@ -140,7 +140,7 @@
         width: 300px;
     }
 
-    .card-container .card:not(:last-of-type) {
+    .card-container .card:not(:last-of-type):not(:hover) {
         margin-right: -150px;
     }
 }
