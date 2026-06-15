@@ -154,7 +154,7 @@ export default function () {
             })
             // Hide status button
             gsap.set('.status', {
-              autoAlpha: self.isActive ? 0 : 1
+              display: self.isActive ? 'none' : 'inline-block'
             })
             // Animate nav
             gsap.to('.nav', {
