@@ -23,7 +23,7 @@ export default function Section (props) {
                 <label>Filter by language / technology:</label>
                 <Filter list={list} setList={setList} filterTech={filterTech} initial={initial} />
             </div>
-            <div className="card-container site-container">
+            <div className="card-container">
                 <div class="card-track">
                     {list.map((item, index) => {
                         return (<Card key={index} slug={item.slug} title={item.title} tech={item.tech} body={item.body} image={item.image} overlay={item.overlay} />)

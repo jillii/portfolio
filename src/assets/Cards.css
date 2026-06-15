@@ -11,10 +11,10 @@
 .card-track {
     display: flex;
     gap: 10px;
-    padding-block: 3rem;
-    padding-inline: 10px;
+    padding: 3rem max(5%, calc((100vw - 1980px) / 2));
     overflow: auto;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 
 .card-container .card {
@@ -37,6 +37,7 @@
 .card-container .card:focus-visible {
     margin-right: 0;
     transform: none;
+    scroll-snap-align: none center;
 }
 
 @media (hover: hover) {
