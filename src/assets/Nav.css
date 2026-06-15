@@ -40,6 +40,7 @@ nav ul {
 nav ul li a {
     color: #111;
     vertical-align: middle;
+    transition: color .4s;
 }
 
 nav .mobile-menu, nav .mobile-menu .drawer {
