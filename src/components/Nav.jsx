@@ -96,6 +96,7 @@ export default function () {
 
   useEffect(() => {
     navRef.current.querySelector('.drawer').inert = isMobile && !isActive // Set drawer to inert = true on mobile when nav closed, false on desktop
+    document.querySelector('body').style.overflow = isMobile && isActive ? 'hidden' : 'auto'
   }, [isMobile, isActive])
 
   // Scroll down mobile menu

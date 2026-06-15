@@ -9,6 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 .site-container {
   max-width: min(1980px, 90%);
