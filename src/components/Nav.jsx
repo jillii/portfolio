@@ -109,12 +109,16 @@ export default function () {
         x: -4,
         autoAlpha: 0
       })
+      tl.to('.mobile-trigger', {
+        y: isActive ? '-100%' : 0,
+        duration: .25
+      }, '<')
       tl.to('.mobile-menu', {
         autoAlpha: isActive ? 1 : 0,
         pointerEvents: isActive ? 'all' : 'none',
         duration: .2,
         ease: 'power.in(1)',
-      })
+      }, '<')
       if (isActive) {
         tl.to('.mobile-menu li', {
           x: 0,
@@ -122,7 +126,7 @@ export default function () {
           duration: .3,
           stagger: .1,
           ease: 'power3.in'
-        }, '-=.1')
+        }, '-=.2')
       }
       return () => { tl.kill(); gsap.set(".mobile-menu, .mobile-menu li", { clearProps: "all" }); }
     })

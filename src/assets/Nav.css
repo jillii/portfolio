@@ -54,7 +54,6 @@ nav .mobile-trigger {
     background-color: transparent;
     border: none;
     border-radius: 0;
-    transition: transform .2s linear;
 }
 nav .mobile-trigger:before,
 nav .mobile-trigger:after {
@@ -80,10 +79,6 @@ nav .mobile-trigger:after {
     height: 21px;
     width: 21px;
     overflow: hidden;
-}
-
-.trigger-wrapper.active .mobile-trigger {
-    transform: translateY(-100%);
 }
 
 nav ul li:has(a[href='/']) {
