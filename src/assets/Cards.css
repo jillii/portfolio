@@ -34,6 +34,11 @@
     margin-right: -250px;
 }
 
+.card-container .card:focus-visible {
+    margin-right: 0;
+    transform: none;
+}
+
 @media (hover: hover) {
     .card-container .card:hover {
         margin-right: 0;
@@ -61,6 +66,13 @@
     object-fit: cover;
     will-change: filter;
     transition: filter .2s;
+}
+
+.card:focus-visible :is(img, video) {
+    filter: blur(4px) brightness(.5);
+}
+.card:focus-visible .card-data {
+    opacity: 1;
 }
 
 @media (hover: hover) {
@@ -144,7 +156,7 @@
         width: 300px;
     }
 
-    .card-container .card:not(:last-of-type):not(:hover) {
+    .card-container .card:not(:last-of-type):not(:hover):not(:focus-visible) {
         margin-right: -150px;
     }
 }
