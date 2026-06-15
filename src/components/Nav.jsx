@@ -95,8 +95,38 @@ export default function () {
   }, [])
 
   useEffect(() => {
-    navRef.current.querySelector('.drawer').inert = isMobile && !isActive // Set drawer to inert = true on mobile when nav closed, false on desktop 
+    navRef.current.querySelector('.drawer').inert = isMobile && !isActive // Set drawer to inert = true on mobile when nav closed, false on desktop
   }, [isMobile, isActive])
+
+  // Scroll down mobile menu
+  useGSAP(() => {
+    let mm = gsap.matchMedia();
+
+    mm.add("(max-width: 767px)", () => {
+      const tl = gsap.timeline()
+
+      tl.to('.mobile-menu li', {
+        x: -4,
+        autoAlpha: 0
+      })
+      tl.to('.mobile-menu', {
+        autoAlpha: isActive ? 1 : 0,
+        pointerEvents: isActive ? 'all' : 'none',
+        duration: .2,
+        ease: 'power.in(1)',
+      })
+      if (isActive) {
+        tl.to('.mobile-menu li', {
+          x: 0,
+          autoAlpha: 1,
+          duration: .3,
+          stagger: .1,
+          ease: 'power3.in'
+        }, '-=.1')
+      }
+      return () => { tl.kill(); gsap.set(".mobile-menu, .mobile-menu li", { clearProps: "all" }); }
+    })
+  }, { scope: navRef, dependencies: [isMobile, isActive] })
 
   useGSAP(() => {
     let mm = gsap.matchMedia();

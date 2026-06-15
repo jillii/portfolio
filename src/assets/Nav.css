@@ -216,18 +216,10 @@ nav ul li:hover a[href='/']:before {
     
     nav .mobile-menu .drawer {
         flex-direction: column;
+        justify-content: center;
         gap: 0;
         width: 100%;
-        margin-top: -100%;
-        transition: margin-top .2s linear;
-    }
-    
-    nav .trigger-wrapper.active + .mobile-menu .drawer {
-        margin-top: 0;
-    }
-
-    nav .mobile-menu li {
-        border-bottom: 1px solid;
+        height: calc(100dvh - 79px);
     }
 
     nav .mobile-menu li a {
