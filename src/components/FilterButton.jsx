@@ -39,7 +39,6 @@ export default function Button(props) {
             const btn = btnRef.current
             setActive([])
             setList(initial)
-            btn.closest('.card-tech-filter').querySelector('button').focus() // Return focus to first button
         }
     }
 
