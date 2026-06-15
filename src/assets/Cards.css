@@ -27,11 +27,11 @@
     transform: skew(0deg, -10deg);
     overflow: hidden;
     will-change: margin-right, transform;
+    transition: margin-right .2s, transform .5s .1s;
 }
 
 .card-container .card:not(:last-of-type) {
     margin-right: -250px;
-    transition: margin-right .2s, transform .5s .1s;
 }
 
 @media (hover: hover) {
